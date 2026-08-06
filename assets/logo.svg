@@ -1,17 +1,51 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 96" role="img" aria-labelledby="title desc">
   <title id="title">Enterprise AI Skills</title>
-  <desc id="desc">Enterprise AI Skills logo</desc>
+  <desc id="desc">Enterprise AI Skills corporate AI, cloud and data training logo</desc>
+
   <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#39d0ff"/>
-      <stop offset="1" stop-color="#7c5cff"/>
+    <linearGradient id="eas-gradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#39D0FF"/>
+      <stop offset="100%" stop-color="#7C5CFF"/>
     </linearGradient>
   </defs>
+
+  <!-- Brand mark -->
   <g transform="translate(4 4)">
-    <path d="M44 0 82 22v44L44 88 6 66V22z" fill="#0d1830" stroke="url(#g)" stroke-width="4"/>
-    <path d="M24 56V32h38v10H36v4h22v10H36v10H24z" fill="url(#g)"/>
-    <circle cx="63" cy="65" r="5" fill="#39d0ff"/>
+    <path
+      d="M44 0 82 22v44L44 88 6 66V22z"
+      fill="#0D1830"
+      stroke="url(#eas-gradient)"
+      stroke-width="4"
+      stroke-linejoin="round"
+    />
+
+    <!-- Clear geometric uppercase E -->
+    <g fill="url(#eas-gradient)">
+      <rect x="23" y="25" width="12" height="48" rx="1"/>
+      <rect x="23" y="25" width="42" height="10" rx="1"/>
+      <rect x="23" y="44" width="32" height="10" rx="1"/>
+      <rect x="23" y="63" width="42" height="10" rx="1"/>
+    </g>
   </g>
-  <text x="108" y="42" fill="#f7fbff" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="30" font-weight="800" letter-spacing="-0.7">Enterprise AI Skills</text>
-  <text x="110" y="70" fill="#9fb0c9" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="16" font-weight="600" letter-spacing="0.8">CORPORATE AI • CLOUD • DATA TRAINING</text>
+
+  <!-- Wordmark -->
+  <text
+    x="108"
+    y="42"
+    fill="#F7FBFF"
+    font-family="Inter, Segoe UI, Arial, sans-serif"
+    font-size="30"
+    font-weight="800"
+    letter-spacing="-0.7"
+  >Enterprise AI Skills</text>
+
+  <text
+    x="110"
+    y="70"
+    fill="#9FB0C9"
+    font-family="Inter, Segoe UI, Arial, sans-serif"
+    font-size="16"
+    font-weight="600"
+    letter-spacing="0.8"
+  >CORPORATE AI • CLOUD • DATA TRAINING</text>
 </svg>
