@@ -707,6 +707,389 @@
     })();
   </script>
 
+
+  <button class="training-chat-launcher" id="training-chat-launcher" type="button" aria-expanded="false" aria-controls="training-chat-panel">
+    <span class="training-chat-dot" aria-hidden="true"></span>
+    <span>AI Training Advisor</span>
+  </button>
+
+  <section class="training-chat-panel" id="training-chat-panel" aria-label="AI Training Advisor" hidden>
+    <div class="training-chat-header">
+      <div>
+        <span class="training-chat-kicker">Enterprise AI Skills</span>
+        <strong>AI Training Advisor</strong>
+        <small>Course guidance for organizational training</small>
+      </div>
+      <button class="training-chat-close" type="button" aria-label="Close AI Training Advisor">×</button>
+    </div>
+
+    <div class="training-chat-messages" id="training-chat-messages" aria-live="polite">
+      <div class="training-chat-message assistant">
+        <p>I can help you identify suitable AI, cloud and data training for your team. What are you trying to accomplish?</p>
+      </div>
+    </div>
+
+    <div class="training-chat-quick" aria-label="Suggested questions">
+      <button type="button" data-chat-prompt="Which AI course is best for a non-technical business team?">Business team AI</button>
+      <button type="button" data-chat-prompt="What training do you recommend for executives and leaders?">Executive training</button>
+      <button type="button" data-chat-prompt="Do you offer onsite training for technical teams?">Onsite delivery</button>
+    </div>
+
+    <form class="training-chat-form" id="training-chat-form">
+      <label class="sr-only" for="training-chat-input">Ask about corporate training</label>
+      <textarea id="training-chat-input" rows="2" maxlength="800" placeholder="Ask about courses, delivery, audience or training pathways..." required></textarea>
+      <button type="submit">Send</button>
+    </form>
+
+    <div class="training-chat-footer">
+      <span>Do not share confidential company information.</span>
+      <button type="button" class="training-chat-plan">Request a Training Plan</button>
+    </div>
+  </section>
+
+  <style>
+    .training-chat-launcher {
+      position: fixed;
+      right: 22px;
+      bottom: 22px;
+      z-index: 9000;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      min-height: 50px;
+      padding: 0 18px;
+      border: 1px solid rgba(101, 205, 248, .36);
+      border-radius: 999px;
+      background: #101c35;
+      color: #f8fbff;
+      box-shadow: 0 18px 50px rgba(0, 0, 0, .36);
+      font: inherit;
+      font-weight: 800;
+      cursor: pointer;
+    }
+    .training-chat-launcher:hover,
+    .training-chat-launcher:focus-visible {
+      background: #142441;
+      outline: 2px solid #63cef9;
+      outline-offset: 2px;
+    }
+    .training-chat-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #64e3a5;
+      box-shadow: 0 0 0 5px rgba(100, 227, 165, .10);
+    }
+    .training-chat-panel {
+      position: fixed;
+      right: 22px;
+      bottom: 84px;
+      z-index: 8999;
+      width: min(410px, calc(100vw - 30px));
+      height: min(650px, calc(100vh - 115px));
+      border: 1px solid rgba(114, 145, 205, .26);
+      border-radius: 20px;
+      background: #0b1428;
+      color: #f8fbff;
+      box-shadow: 0 28px 80px rgba(0,0,0,.52);
+      overflow: hidden;
+      grid-template-rows: auto 1fr auto auto auto;
+    }
+    .training-chat-panel:not([hidden]) { display: grid; }
+    .training-chat-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 14px;
+      padding: 18px 18px 15px;
+      border-bottom: 1px solid rgba(144, 166, 211, .14);
+      background: #101a31;
+    }
+    .training-chat-header strong,
+    .training-chat-header small,
+    .training-chat-kicker { display: block; }
+    .training-chat-kicker {
+      margin-bottom: 3px;
+      color: #6dd2ff;
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .training-chat-header strong {
+      font-size: 18px;
+      line-height: 1.25;
+    }
+    .training-chat-header small {
+      margin-top: 3px;
+      color: #9eacc8;
+      font-size: 12px;
+    }
+    .training-chat-close {
+      width: 36px;
+      height: 36px;
+      flex: 0 0 auto;
+      border: 1px solid rgba(255,255,255,.13);
+      border-radius: 50%;
+      background: rgba(255,255,255,.04);
+      color: #fff;
+      font-size: 24px;
+      line-height: 1;
+      cursor: pointer;
+    }
+    .training-chat-messages {
+      overflow-y: auto;
+      padding: 16px;
+      scroll-behavior: smooth;
+    }
+    .training-chat-message {
+      max-width: 88%;
+      margin-bottom: 12px;
+      padding: 11px 13px;
+      border-radius: 14px;
+      line-height: 1.5;
+      font-size: 14px;
+    }
+    .training-chat-message p { margin: 0; }
+    .training-chat-message.assistant {
+      margin-right: auto;
+      background: #14213d;
+      border: 1px solid rgba(118, 149, 211, .14);
+      color: #dce7f8;
+    }
+    .training-chat-message.user {
+      margin-left: auto;
+      background: linear-gradient(135deg, #5fcdf7, #8a83ff);
+      color: #071120;
+      font-weight: 700;
+    }
+    .training-chat-message.error {
+      margin-right: auto;
+      border: 1px solid rgba(247, 179, 82, .28);
+      background: rgba(247, 179, 82, .08);
+      color: #f7d8a9;
+    }
+    .training-chat-quick {
+      display: flex;
+      gap: 7px;
+      overflow-x: auto;
+      padding: 0 14px 11px;
+    }
+    .training-chat-quick button {
+      flex: 0 0 auto;
+      border: 1px solid rgba(117, 149, 210, .24);
+      border-radius: 999px;
+      background: #0f1b33;
+      color: #bfcce3;
+      padding: 7px 10px;
+      font: inherit;
+      font-size: 11px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    .training-chat-form {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 9px;
+      padding: 12px 14px;
+      border-top: 1px solid rgba(144, 166, 211, .13);
+      background: #0d172c;
+    }
+    .training-chat-form textarea {
+      width: 100%;
+      min-height: 48px;
+      max-height: 120px;
+      resize: none;
+      box-sizing: border-box;
+      border: 1px solid rgba(145, 169, 216, .20);
+      border-radius: 12px;
+      background: #111e37;
+      color: #f8fbff;
+      padding: 11px 12px;
+      font: inherit;
+      font-size: 13px;
+    }
+    .training-chat-form textarea:focus {
+      outline: 2px solid #61cdf9;
+      outline-offset: 1px;
+      border-color: transparent;
+    }
+    .training-chat-form button {
+      align-self: stretch;
+      border: 0;
+      border-radius: 12px;
+      padding: 0 15px;
+      background: #6cd2f8;
+      color: #071120;
+      font: inherit;
+      font-weight: 900;
+      cursor: pointer;
+    }
+    .training-chat-form button[disabled] {
+      opacity: .55;
+      cursor: wait;
+    }
+    .training-chat-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 14px 13px;
+      color: #7f8eaa;
+      font-size: 10px;
+      background: #0d172c;
+    }
+    .training-chat-plan {
+      border: 0;
+      background: transparent;
+      color: #78d8ff;
+      font: inherit;
+      font-size: 11px;
+      font-weight: 800;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0,0,0,0);
+      white-space: nowrap;
+      border: 0;
+    }
+    @media (max-width: 640px) {
+      .training-chat-launcher {
+        right: 14px;
+        bottom: 14px;
+        min-height: 46px;
+        padding: 0 15px;
+        font-size: 13px;
+      }
+      .training-chat-panel {
+        left: 10px;
+        right: 10px;
+        bottom: 70px;
+        width: auto;
+        height: min(72vh, 650px);
+      }
+      .training-chat-footer {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+    }
+  </style>
+
+  <script>
+    (() => {
+      const launcher = document.getElementById('training-chat-launcher');
+      const panel = document.getElementById('training-chat-panel');
+      const closeButton = panel?.querySelector('.training-chat-close');
+      const messages = document.getElementById('training-chat-messages');
+      const form = document.getElementById('training-chat-form');
+      const input = document.getElementById('training-chat-input');
+      const sendButton = form?.querySelector('button[type="submit"]');
+      const quickButtons = panel?.querySelectorAll('[data-chat-prompt]') || [];
+      const planButton = panel?.querySelector('.training-chat-plan');
+      const trainingDialog = document.getElementById('training-request-dialog');
+
+      const history = [];
+
+      const setOpen = (open) => {
+        if (!panel || !launcher) return;
+        panel.hidden = !open;
+        launcher.setAttribute('aria-expanded', String(open));
+        if (open) setTimeout(() => input?.focus(), 30);
+      };
+
+      const addMessage = (role, text, extraClass = '') => {
+        if (!messages) return;
+        const item = document.createElement('div');
+        item.className = `training-chat-message ${role} ${extraClass}`.trim();
+        const p = document.createElement('p');
+        p.textContent = text;
+        item.appendChild(p);
+        messages.appendChild(item);
+        messages.scrollTop = messages.scrollHeight;
+      };
+
+      const ask = async (text) => {
+        const clean = (text || '').trim();
+        if (!clean || !sendButton) return;
+
+        addMessage('user', clean);
+        history.push({ role: 'user', content: clean });
+        input.value = '';
+        sendButton.disabled = true;
+        sendButton.textContent = '...';
+
+        try {
+          const response = await fetch('/api/chat', {
+            method: 'POST',
+            headers: { 'content-type': 'application/json' },
+            body: JSON.stringify({
+              message: clean,
+              history: history.slice(-6)
+            })
+          });
+
+          const data = await response.json().catch(() => ({}));
+
+          if (!response.ok) {
+            throw new Error(data.error || 'Training Advisor is temporarily unavailable.');
+          }
+
+          const answer = (data.answer || '').trim();
+          if (!answer) throw new Error('Training Advisor returned an empty response.');
+
+          addMessage('assistant', answer);
+          history.push({ role: 'assistant', content: answer });
+        } catch (error) {
+          addMessage(
+            'assistant',
+            'The AI advisor is not available yet. You can still use Request a Training Plan and we’ll respond directly.',
+            'error'
+          );
+        } finally {
+          sendButton.disabled = false;
+          sendButton.textContent = 'Send';
+          input.focus();
+        }
+      };
+
+      launcher?.addEventListener('click', () => setOpen(panel?.hidden !== false));
+      closeButton?.addEventListener('click', () => setOpen(false));
+
+      quickButtons.forEach((button) => {
+        button.addEventListener('click', () => ask(button.dataset.chatPrompt));
+      });
+
+      form?.addEventListener('submit', (event) => {
+        event.preventDefault();
+        ask(input.value);
+      });
+
+      input?.addEventListener('keydown', (event) => {
+        if (event.key === 'Enter' && !event.shiftKey) {
+          event.preventDefault();
+          form?.requestSubmit();
+        }
+      });
+
+      planButton?.addEventListener('click', () => {
+        setOpen(false);
+        if (!trainingDialog) return;
+        if (typeof trainingDialog.showModal === 'function') {
+          trainingDialog.showModal();
+        } else {
+          trainingDialog.setAttribute('open', '');
+        }
+      });
+    })();
+  </script>
+
   <footer class="site-footer">
     <div class="container footer-grid">
       <div>
