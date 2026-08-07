@@ -589,7 +589,17 @@
       outline-offset: 2px;
       border-color: transparent;
     }
-    .training-request-form select option { color: #101828; }
+    /* Keep native select menus readable across light/dark browser themes. */
+    .training-request-form select {
+      color-scheme: light;
+    }
+    .training-request-form select option {
+      background: #ffffff;
+      color: #101828;
+    }
+    .training-request-form select option:disabled {
+      color: #667085;
+    }
     .consent-row {
       grid-template-columns: auto 1fr !important;
       align-items: start;
