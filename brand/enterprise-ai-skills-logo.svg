@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="240" viewBox="0 0 920 240" role="img" aria-labelledby="t d">
+<title id="t">Enterprise AI Skills</title>
+<desc id="d">Independent Enterprise AI Skills brand mark and wordmark</desc>
+<rect width="920" height="240" rx="36" fill="#0B1628"/>
+<g transform="translate(48 44)">
+  <rect x="0" y="0" width="152" height="152" rx="38" fill="#10253A" stroke="#67D5E4" stroke-width="5"/>
+  <rect x="37" y="35" width="31" height="31" rx="5" fill="none" stroke="#67D5E4" stroke-width="5"/>
+  <rect x="86" y="35" width="28" height="31" rx="5" fill="none" stroke="#67D5E4" stroke-width="5"/>
+  <rect x="37" y="84" width="31" height="28" rx="5" fill="none" stroke="#67D5E4" stroke-width="5"/>
+  <circle cx="101" cy="99" r="16" fill="none" stroke="#F4C653" stroke-width="5"/>
+</g>
+<text x="238" y="112" font-family="Arial, Helvetica, sans-serif" font-size="58" font-weight="800" fill="#F7FAFC">Enterprise</text>
+<text x="527" y="112" font-family="Arial, Helvetica, sans-serif" font-size="58" font-weight="800" fill="#67D5E4">AI</text>
+<text x="590" y="112" font-family="Arial, Helvetica, sans-serif" font-size="58" font-weight="800" fill="#F7FAFC">Skills</text>
+<text x="242" y="158" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" letter-spacing="5" fill="#9CB3C6">BUSINESS VALUE • AI • CLOUD • DATA</text>
+</svg>

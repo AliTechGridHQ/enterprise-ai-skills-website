@@ -1,0 +1,22 @@
+{
+  "version": "FINAL V4.1 CHATBOT",
+  "chatbot_pages": [
+    "about.html",
+    "advisor.html",
+    "contact.html",
+    "index.html",
+    "industries.html",
+    "privacy.html",
+    "services.html",
+    "solutions.html",
+    "terms.html",
+    "training.html"
+  ],
+  "missing_chatbot_pages": [],
+  "homepage_heading_updated": true,
+  "chatbot_external_api_calls": false,
+  "cname": "enterpriseaiskills.com",
+  "chatbot_has_training_route": true,
+  "chatbot_has_solution_route": true,
+  "chatbot_has_contact_route": true
+}

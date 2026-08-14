@@ -1,31 +1,24 @@
-# Enterprise AI Skills website
+# EnterpriseAISkills.com World-Class V3
 
-A responsive, deployment-ready static website for EnterpriseAISkills.com.
+Static, GitHub-Pages-ready business website and client-side AI Business Value & Workforce Solution Engine.
 
-## Included
+## Core proposition
+Listen → Analyze → Map → Compare → Recommend → Budget → Schedule → Implement → Measure.
 
-- Professional one-page corporate website
-- 12 flagship courses with category filtering
-- Responsive mobile navigation
-- SEO metadata and structured data
-- Privacy and terms draft pages
-- robots.txt and sitemap.xml
-- Cloudflare Pages deployment checklist
+## Key files
+- `index.html` — business-value homepage
+- `advisor.html` — 6-step solution engine
+- `solutions.html` — business value and AI architecture options
+- `training.html` — role-based AI workforce capability
+- `services.html` — services and indicative planning bands
+- `industries.html` — industry-aware use cases
+- `assets/js/engine.js` — deterministic client-side expert logic
 
-## Before public launch
+## Important limitation
+This V3 works without a server or API key. It is a sophisticated deterministic planning engine, not a live LLM/backend. It produces useful first-pass guidance but cannot fetch current vendor pricing or perform confidential enterprise analysis. A future production V4 can connect to a secure server-side AI model, CRM/booking, PDF generation and live knowledge sources.
 
-1. Replace `[Exact Federal Corporation Name]` and `[Province]` in the footer and legal pages.
-2. Confirm `contact@enterpriseaiskills.com` is working.
-3. Have privacy and terms drafts reviewed.
-4. Replace or remove any course you are not ready to deliver.
-5. Connect analytics only after deciding on consent and privacy settings.
+## Deployment
+Upload the contents of this folder to the root of the GitHub Pages repository serving `enterpriseaiskills.com`.
 
-## Local preview
-
-Open `index.html` in a browser, or run a simple static server:
-
-```bash
-python3 -m http.server 8080
-```
-
-Then visit `http://localhost:8080`.
+## Privacy
+Advisor progress is stored in the visitor's browser via localStorage. Do not collect confidential/sensitive information in this static version.

@@ -1,0 +1,35 @@
+EnterpriseAISkills.com Brand Architecture — V3.3
+=================================================
+
+PRIMARY CLIENT-FACING BRAND
+Enterprise AI Skills
+
+HEADER / NAVIGATION
+- Enterprise AI Skills logo and name only.
+- Do not place the AliTechGrid logo beside it.
+- Do not use "by AliTechGrid" in the main navigation or hero.
+
+ENDORSEMENT
+Use only in low-emphasis areas:
+"Enterprise AI Skills — an AliTechGrid Canada initiative"
+
+Recommended locations:
+- Footer
+- About page
+- Contact page
+- Proposal/legal/operational documents
+
+SHARED COMMUNICATION CHANNELS
+Business Phone: +1 778 358 4040
+WhatsApp: +1 672 671 9982
+General Email: contact@alitechgrid.com
+Support Email: support@alitechgrid.com
+
+Rationale:
+Enterprise AI Skills remains a focused specialist brand for AI business value,
+workforce capability, training and advisory. AliTechGrid Canada provides selected
+shared operational/communication infrastructure without visually merging brands.
+
+Included separate Enterprise AI Skills logo assets:
+- brand/enterprise-ai-skills-logo.svg
+- brand/enterprise-ai-skills-mark.svg

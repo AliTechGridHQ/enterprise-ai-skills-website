@@ -1,0 +1,15 @@
+{
+  "version": "3.3",
+  "html_pages": 10,
+  "enterprise_ai_only_in_headers": true,
+  "mixed_header_occurrences": 0,
+  "footer_endorsement_pages": 10,
+  "contact_shared_channel_note": true,
+  "about_brand_relationship": true,
+  "separate_full_logo": true,
+  "separate_brand_mark": true,
+  "cname": "enterpriseaiskills.com",
+  "robots_exists": true,
+  "sitemap_exists": true,
+  "favicon_exists": true
+}

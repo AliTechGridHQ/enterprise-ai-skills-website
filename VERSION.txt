@@ -1,0 +1,35 @@
+EnterpriseAISkills.com
+Final Production Candidate V4
+Date: 2026-08-13
+
+Positioning:
+AI Business Value & Workforce Solution Engine
+
+Core value model:
+Customers
+Products & Services
+Processes
+Decisions
+People
+Performance
+
+Commercial paths:
+1. Standard fixed role-based AI courses
+2. Custom AI Business Value & Learning Plan
+3. Private team training
+4. Advisory / implementation planning
+
+Brand architecture:
+Enterprise AI Skills = primary client-facing specialist brand
+AliTechGrid Canada = limited shared operational and communication support
+
+Important:
+The current public Solution Engine is a deterministic client-side planning engine.
+A secure server-side AI layer is required for live open-ended reasoning, current
+tool/vendor research, CRM integration, payment, formal quotation, and sensitive-data workflows.
+
+V4.1 Update:
+- Added AI Business Advisor chatbot to all main customer pages.
+- Chatbot is a privacy-conscious client-side advisor (no external AI/API key).
+- Routes users to training, solution engine, estimates, scheduling and contact paths.
+- Updated homepage wording to: "Need AI training—or a complete business solution?"

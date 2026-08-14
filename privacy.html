@@ -1,23 +1,395 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Privacy Policy | Enterprise AI Skills</title>
-  <meta name="robots" content="noindex">
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="styles.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Privacy &amp; Responsible Use | Enterprise AI Skills</title>
+<meta name="description" content="Privacy and responsible-use guidance for Enterprise AI Skills public planning tools and client communications.">
+<meta name="theme-color" content="#07111f">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://enterpriseaiskills.com/privacy.html">
+<style>
+
+:root{--bg:#07111f;--bg2:#0a1728;--panel:#0e1e33;--panel2:#11243b;--line:#203650;--text:#f5f8fb;--muted:#9eb1c8;--cyan:#67d5e4;--cyan2:#2bbbd1;--blue:#84a8ff;--gold:#f4c653;--green:#70e1ad;--red:#ff8f92;--white:#fff;--ink:#0d2033;--paper:#f5f8fb;--shadow:0 22px 70px rgba(0,0,0,.28);--radius:22px;--max:1240px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;line-height:1.58}a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}.container{width:min(var(--max),calc(100% - 40px));margin:auto}.narrow{max-width:900px}.skip-link{position:absolute;left:-9999px;top:8px;background:#fff;color:#000;padding:8px 12px;z-index:1000}.skip-link:focus{left:8px}.announcement{background:#07101b;border-bottom:1px solid #17273a;font-size:13px;color:var(--muted)}.announcement .container{display:flex;justify-content:center;gap:14px;padding:8px 0}.announcement strong{color:var(--green)}
+.site-header{position:sticky;top:0;z-index:100;background:rgba(10,20,34,.94);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}.nav-wrap{height:88px;display:flex;align-items:center;gap:28px}.brand{display:flex;align-items:center;gap:12px;min-width:max-content}.brand-mark{width:44px;height:44px;border:1px solid #2c5163;border-radius:13px;display:grid;place-items:center;color:var(--cyan);background:linear-gradient(145deg,#10263a,#0b1b2d)}.brand-word{display:flex;flex-direction:column;line-height:1.05}.brand-word b{font-size:19px}.brand-word small{font-size:9px;letter-spacing:1.6px;color:var(--muted);margin-top:6px}.accent{color:var(--cyan)}.main-nav{margin-left:auto;display:flex;align-items:center;gap:26px;font-weight:700;font-size:14px;color:#c2cddd}.main-nav a:hover,.main-nav a[aria-current="page"]{color:#fff}.nav-cta{padding:12px 17px;border-radius:12px;background:var(--cyan);color:#07111f!important}.nav-toggle{display:none;margin-left:auto;background:transparent;border:1px solid var(--line);color:#fff;border-radius:10px;padding:8px 12px}
+.eyebrow,.kicker,.step-kicker{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:800;letter-spacing:1.7px;text-transform:uppercase;color:var(--cyan)}.eyebrow:before{content:"";width:23px;height:2px;background:var(--cyan);border-radius:3px}.hero{padding:94px 0 82px;background:radial-gradient(circle at 78% 18%,rgba(43,187,209,.13),transparent 30%),linear-gradient(rgba(255,255,255,.018) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.018) 1px,transparent 1px);background-size:auto,72px 72px,72px 72px}.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:74px;align-items:center}.hero h1,.page-hero h1,.advisor-hero h1{font-size:clamp(48px,6.1vw,82px);line-height:.98;letter-spacing:-4px;margin:24px 0 24px}.hero h1 span,.page-hero h1 span,.advisor-hero h1 span{color:var(--cyan)}.hero-lead,.page-hero p,.advisor-hero p,.lead{font-size:19px;color:#bed0e4;max-width:760px}.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin:30px 0 22px}.btn{border:1px solid var(--line);border-radius:12px;padding:14px 19px;font-weight:800;display:inline-flex;align-items:center;justify-content:center;cursor:pointer;background:#122238;color:#fff;transition:.2s}.btn:hover{transform:translateY(-1px);border-color:#3d5876}.btn.primary{background:var(--cyan);border-color:var(--cyan);color:#06101a}.btn.secondary{background:#101d31}.btn.ghost{background:transparent}.btn.large{padding:17px 24px}.hero-proof,.advisor-proof{display:flex;flex-wrap:wrap;gap:14px;color:var(--muted);font-size:13px}.hero-proof span,.advisor-proof span{padding:6px 0}
+.hero-engine-card{background:linear-gradient(145deg,rgba(18,37,61,.96),rgba(9,22,39,.96));border:1px solid #28415f;border-radius:26px;box-shadow:var(--shadow);overflow:hidden}.engine-card-head{padding:18px 20px;border-bottom:1px solid var(--line);display:grid;grid-template-columns:auto 1fr auto;gap:10px;align-items:center}.engine-card-head small{color:var(--muted)}.live-dot{width:9px;height:9px;border-radius:50%;background:var(--green);box-shadow:0 0 14px var(--green)}.engine-flow{padding:18px;display:grid;gap:10px}.engine-flow>div{display:grid;grid-template-columns:42px 1fr;gap:4px 12px;padding:14px 16px;border:1px solid #213753;border-radius:14px;background:rgba(255,255,255,.02)}.engine-flow span{grid-row:1/3;color:var(--cyan);font-weight:900;align-self:center}.engine-flow small{color:var(--muted)}.engine-output{margin:0 18px 18px;padding:16px;border-radius:15px;background:linear-gradient(110deg,rgba(103,213,228,.11),rgba(132,168,255,.09));border:1px solid #2d4f65}.engine-output p{font-size:20px;margin:3px 0 10px}.mini-tags{display:flex;flex-wrap:wrap;gap:7px}.mini-tags span{padding:5px 8px;border-radius:99px;background:#0b1a2e;color:#b9c8d8;font-size:11px;border:1px solid #29415e}
+.value-strip{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#0a1726}.value-strip .container{padding:20px 0;display:flex;align-items:center;gap:18px}.value-strip span{font-size:11px;text-transform:uppercase;letter-spacing:1.4px;color:var(--muted)}.value-chips{display:flex;flex-wrap:wrap;gap:10px}.value-chips b{font-size:13px;padding:8px 12px;border:1px solid #274059;border-radius:99px;background:#0c1c30}
+.section{padding:94px 0}.section.alt{background:#091625;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.section-head{max-width:850px;margin-bottom:42px}.section-head h2,.split-grid h2,.cta-card h2{font-size:clamp(34px,4vw,54px);letter-spacing:-2px;line-height:1.04;margin:14px 0 16px}.section-head p{color:var(--muted);font-size:18px}.process-grid,.feature-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.process-grid article,.feature-grid article,.stack-grid article,.service-grid article,.industry-grid article{padding:24px;border:1px solid var(--line);border-radius:18px;background:linear-gradient(145deg,#0e1e33,#0b192b)}.process-grid span,.feature-grid i,.stack-grid span,.service-grid span{display:inline-grid;place-items:center;width:36px;height:36px;border:1px solid #2e5065;border-radius:10px;color:var(--cyan);font-style:normal;font-weight:900}.process-grid h3,.feature-grid h3,.stack-grid h3,.service-grid h3{font-size:20px;margin:18px 0 8px}.process-grid p,.feature-grid p,.stack-grid p,.service-grid p,.industry-grid p{color:var(--muted);margin:0}.split-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:70px;align-items:start}.role-list{display:grid;gap:9px;margin-top:30px}.role-list a{padding:15px 16px;border:1px solid var(--line);border-radius:13px;display:flex;justify-content:space-between;gap:15px;background:#0d1b2e}.role-list span{color:var(--muted);font-size:13px}.insight-card,.principle-card,.manifesto-card{border:1px solid #28445d;border-radius:22px;background:linear-gradient(145deg,#11233a,#0a192b);padding:28px;box-shadow:var(--shadow)}.insight-card h3{font-size:28px;line-height:1.15}.arrow-line{color:var(--cyan);font-size:22px;margin:8px 0}.result-bar{border-top:1px solid var(--line);margin-top:18px;padding-top:18px;display:grid;gap:5px}.result-bar span{color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:1px}.result-bar b{color:var(--green)}.feature-grid{grid-template-columns:repeat(4,1fr)}.modern-stack{background:radial-gradient(circle at 20% 20%,rgba(132,168,255,.08),transparent 30%)}.stack-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}.stack-grid article{padding:20px}.cta-section{padding-top:0}.cta-card{display:flex;justify-content:space-between;align-items:center;gap:30px;border:1px solid #2e526a;border-radius:26px;padding:36px;background:linear-gradient(120deg,rgba(103,213,228,.12),rgba(132,168,255,.09),rgba(244,198,83,.05))}.cta-card h2{margin-top:0}.cta-card p{color:var(--muted);max-width:740px}
+.page-hero,.advisor-hero{padding:80px 0 70px;background:radial-gradient(circle at 75% 20%,rgba(103,213,228,.1),transparent 32%)}.page-hero h1,.advisor-hero h1{font-size:clamp(46px,5.5vw,72px)}.page-hero .btn{margin-top:18px}.solution-domain-grid,.industry-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.solution-domain-grid article{padding:26px;border:1px solid var(--line);border-radius:18px;background:#0c1b2e}.solution-domain-grid span{color:var(--cyan);font-weight:900}.solution-domain-grid h3{font-size:22px}.solution-domain-grid p{color:var(--muted)}.solution-domain-grid small{display:block;color:#9bb0c8;margin-top:5px}.architecture-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.architecture-grid article{border:1px solid var(--line);border-radius:18px;padding:24px;background:#0d1d31}.arch-level{font-size:11px;letter-spacing:1.3px;color:var(--cyan);font-weight:900}.architecture-grid p{color:var(--muted)}.architecture-grid small{color:#87a1bc}.principle-card ol{padding-left:20px}.principle-card li{margin:10px 0;color:#c2d0df}
+.training-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.training-grid article{padding:26px;border:1px solid var(--line);border-radius:18px;background:#0d1c2f}.path-badge,.price-label{font-size:10px;letter-spacing:1.4px;color:var(--cyan);font-weight:900}.training-grid h3{font-size:22px}.training-grid p,.training-grid li{color:var(--muted)}.training-grid ul{padding-left:18px}.layer-timeline{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}.layer-timeline>div{padding:20px 16px;border:1px solid var(--line);border-radius:16px;background:#0d1d30}.layer-timeline span{color:var(--cyan);font-weight:900}.layer-timeline b{display:block;margin:12px 0 4px}.layer-timeline p{font-size:13px;color:var(--muted)}.delivery-card{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.delivery-card>div{padding:18px;border:1px solid var(--line);border-radius:14px;background:#0d1d31;display:grid;gap:4px}.delivery-card span{color:var(--muted);font-size:13px}
+.service-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.pricing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.pricing-grid article{border:1px solid var(--line);border-radius:22px;padding:28px;background:#0c1b2e}.pricing-grid article.featured{border-color:#4c8a98;box-shadow:0 0 0 1px rgba(103,213,228,.16),var(--shadow)}.pricing-grid h3{font-size:25px}.price{font-size:28px;font-weight:900;color:#fff;margin:12px 0}.pricing-grid p,.pricing-grid li{color:var(--muted)}.pricing-grid ul{padding-left:18px}.pricing-note{margin-top:18px;padding:16px;border:1px solid #3d4650;border-radius:14px;background:#131d28;color:#aebdca}.budget-components{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.budget-components>div{padding:18px;border:1px solid var(--line);border-radius:14px;background:#0c1b2e;display:grid;gap:5px}.budget-components span{color:var(--muted);font-size:13px}.principles{display:grid;gap:14px;margin-top:25px}.principles>div{padding-left:18px;border-left:2px solid var(--cyan)}.principles p{margin:4px 0;color:var(--muted)}.manifesto-card h3{font-size:31px;line-height:1.1}.prose h2{margin-top:34px}.prose p{color:#b5c6d8}
+/* Advisor */
+.advisor-hero-grid{display:grid;grid-template-columns:1.1fr .7fr;gap:70px;align-items:start}.advisor-outcome-card{padding:24px;border:1px solid #2d4c65;border-radius:22px;background:#0c1d31}.advisor-outcome-card h2{font-size:25px}.advisor-outcome-card ul{padding-left:18px;color:#c2d1df}.advisor-note{font-size:12px!important;color:#8399b2!important;border-top:1px solid var(--line);padding-top:14px}.advisor-shell-section{padding:42px 0 90px}.advisor-app{display:grid;grid-template-columns:320px 1fr;border:1px solid #27415c;border-radius:24px;overflow:hidden;background:#0a1829;box-shadow:var(--shadow)}.advisor-sidebar{padding:26px;background:#0b192b;border-right:1px solid var(--line)}.advisor-side-head h2{font-size:22px}.advisor-steps{list-style:none;margin:25px 0;padding:0;display:grid;gap:8px}.advisor-steps li{display:grid;grid-template-columns:34px 1fr;gap:12px;padding:12px;border-radius:13px;color:#839ab1}.advisor-steps li>span{width:32px;height:32px;border:1px solid #2c425b;border-radius:9px;display:grid;place-items:center;font-weight:900}.advisor-steps li b{display:block;color:#adc0d2;font-size:13px}.advisor-steps li small{font-size:11px}.advisor-steps li.active{background:#10243a;color:var(--cyan)}.advisor-steps li.active>span{border-color:#4e8894;color:var(--cyan)}.advisor-steps li.active b{color:#fff}.advisor-privacy{padding:14px;border:1px solid #354154;border-radius:13px;background:#111b28;font-size:12px;color:#90a3b5}.advisor-privacy p{margin:5px 0 0}.advisor-panel{padding:30px}.advisor-progress{display:flex;align-items:center;gap:16px;margin-bottom:30px}.advisor-progress-track{height:7px;background:#14283e;border-radius:99px;flex:1;overflow:hidden}.advisor-progress-track span{display:block;height:100%;width:16.666%;background:linear-gradient(90deg,var(--cyan),var(--blue));transition:.25s}.advisor-progress b{font-size:12px;color:var(--muted)}.advisor-step>h2{font-size:34px;margin:9px 0}.advisor-step>p{color:var(--muted)}.question-block{margin-top:28px}.question-block h3{font-size:16px;margin:0 0 12px}.question-block h3 small{font-weight:400;color:var(--muted)}.option-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.option-grid.compact{grid-template-columns:repeat(3,1fr)}.advisor-option,.value-option{border:1px solid #273e59;background:#0e1d31;color:#fff;border-radius:14px;padding:15px;text-align:left;cursor:pointer;transition:.15s}.advisor-option:hover,.value-option:hover{border-color:#4a7383;transform:translateY(-1px)}.advisor-option.selected,.value-option.selected{border-color:var(--cyan);background:rgba(103,213,228,.09);box-shadow:0 0 0 1px rgba(103,213,228,.12)}.advisor-option b,.value-option b{display:block}.advisor-option small,.value-option small{display:block;margin-top:5px;color:var(--muted);font-size:12px}.value-priority-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.value-option span{font-size:11px;color:var(--cyan);font-weight:900}.two-col{display:grid;grid-template-columns:1fr 1fr;gap:18px}.select-wrap select,textarea{width:100%;background:#0e1d31;color:#fff;border:1px solid #29415d;border-radius:12px;padding:14px;outline:none}.select-wrap select:focus,textarea:focus{border-color:var(--cyan)}textarea{resize:vertical}.char-count{text-align:right;font-size:11px;color:var(--muted)}.finish-box{margin-top:25px;padding:18px;border:1px solid #2d5761;border-radius:14px;background:rgba(103,213,228,.06)}.finish-box p{margin:5px 0;color:var(--muted)}.advisor-nav{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:16px;margin-top:32px;padding-top:22px;border-top:1px solid var(--line)}.advisor-save{text-align:center;color:#7f94aa;font-size:11px}.save-dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--green);margin-right:5px}.advisor-error{min-height:22px;margin-top:8px;color:var(--red);font-size:12px}
+/* Generated plan */
+.plan-section{padding:50px 0 100px;background:#eef4f7;color:var(--ink)}.plan-toolbar{display:flex;justify-content:space-between;align-items:center;gap:20px;margin-bottom:20px}.plan-toolbar .eyebrow{color:#147d8e}.plan-toolbar .eyebrow:before{background:#147d8e}.plan-toolbar h2{margin:5px 0}.plan-actions{display:flex;flex-wrap:wrap;gap:8px}.plan-actions .btn{background:#fff;color:#153047;border-color:#c7d5df}.plan-actions .btn.primary{background:#0c7e91;color:#fff;border-color:#0c7e91}.generated-plan{background:#fff;border:1px solid #d3dee5;border-radius:24px;overflow:hidden;box-shadow:0 20px 50px rgba(28,52,73,.12)}.plan-cover{padding:38px;background:linear-gradient(135deg,#071a2c,#0d3450);color:#fff;display:grid;grid-template-columns:1.1fr .9fr;gap:30px}.plan-cover .eyebrow{color:#76e1eb}.plan-cover h1{font-size:42px;line-height:1.05;margin:16px 0}.plan-cover p{color:#c6d9e8;font-size:17px}.plan-meta{display:grid;grid-template-columns:repeat(2,1fr);gap:9px}.plan-meta div{border:1px solid rgba(255,255,255,.14);border-radius:12px;padding:12px;background:rgba(255,255,255,.04)}.plan-meta span{display:block;color:#89a5bb;font-size:10px;text-transform:uppercase;letter-spacing:1px}.plan-meta b{font-size:13px}.plan-body{padding:38px}.plan-section-block{padding:30px 0;border-bottom:1px solid #dce5ea}.plan-section-block:last-child{border-bottom:0}.plan-section-block h2{font-size:27px;margin:0 0 12px}.plan-section-block .lead{color:#4b6274;font-size:16px}.summary-banner{padding:18px;border-radius:15px;background:#eaf7f8;border:1px solid #b9e0e5;margin:18px 0}.summary-banner b{color:#0c6574}.plan-summary-grid,.opportunity-grid,.solution-options,.tech-grid,.kpi-grid,.budget-grid,.assumption-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.plan-summary-card,.opportunity-card,.tech-card,.kpi-card,.budget-card,.assumption-card{border:1px solid #d6e1e7;border-radius:14px;padding:16px;background:#fbfdfe}.plan-summary-card span,.kpi-card span,.budget-card span,.assumption-card span{font-size:10px;text-transform:uppercase;letter-spacing:1px;color:#6f8493}.plan-summary-card b,.kpi-card b,.budget-card b,.assumption-card b{display:block;margin:4px 0;color:#102e43}.plan-summary-card small,.opportunity-card p,.tech-card p,.budget-card small,.assumption-card small{color:#5f7382}.opportunity-card.high{border-top:4px solid #17a7ba}.opp-rank{font-size:10px;color:#118092;font-weight:900;text-transform:uppercase}.opportunity-card h3{margin:7px 0}.diagnosis-list{display:grid;gap:9px}.diagnosis-list div{padding:13px 15px;border-left:3px solid #1f9fb1;background:#f4f8fa}.solution-option{border:1px solid #d3dfe6;border-radius:16px;padding:18px;background:#fbfdfe;position:relative}.solution-option.recommended{border:2px solid #15889a;background:#f0fbfc}.recommend-badge{position:absolute;top:12px;right:12px;font-size:9px;letter-spacing:1px;background:#147f90;color:#fff;border-radius:99px;padding:5px 8px}.solution-option h3{font-size:21px;margin:5px 0}.solution-option p{color:#5a6e7d}.solution-option ul{padding-left:18px;color:#536b7b}.option-facts{display:grid;grid-template-columns:repeat(2,1fr);gap:6px;margin-top:12px}.option-facts div{padding:8px;border-radius:9px;background:#eef4f6}.option-facts span{display:block;font-size:9px;text-transform:uppercase;color:#758995}.option-facts b{font-size:12px}.reason-box{margin-top:15px;padding:16px;border-radius:14px;background:#102e43;color:#fff}.reason-box p{color:#c8d8e3;margin:5px 0}.tech-card small{display:inline-block;margin-top:7px;padding:4px 7px;border-radius:99px;background:#edf5f7;color:#267385}.learning-path{display:grid;gap:8px}.learning-module{display:grid;grid-template-columns:45px 1fr auto;gap:14px;align-items:center;border:1px solid #d8e2e8;border-radius:13px;padding:14px}.module-num{width:38px;height:38px;border-radius:10px;background:#e6f7f8;display:grid;place-items:center;color:#0a7888;font-weight:900}.learning-module h3{margin:0;font-size:17px}.learning-module p{margin:3px 0;color:#607786;font-size:13px}.module-badge{font-size:10px;padding:5px 8px;background:#eef2f5;border-radius:99px;color:#587080}.roadmap{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.roadmap-phase{padding:16px;border:1px solid #d6e1e7;border-radius:14px;background:#fbfdfe}.roadmap-time{font-size:10px;color:#0c7c8e;font-weight:900;text-transform:uppercase}.roadmap-phase h3{font-size:18px}.roadmap-phase ul{padding-left:18px;color:#5a6e7d;font-size:13px}.budget-total{font-size:30px;font-weight:900;color:#0c6677}.guardrail-list{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.guardrail-list div{padding:14px;border:1px solid #d7e1e7;border-radius:12px;background:#fbfdfe}.next-actions{counter-reset:item;display:grid;gap:9px}.next-actions div{display:grid;grid-template-columns:34px 1fr;gap:12px;align-items:start}.next-actions div:before{counter-increment:item;content:counter(item);width:30px;height:30px;border-radius:9px;background:#e4f6f8;color:#0a7586;display:grid;place-items:center;font-weight:900}.plan-note{padding:14px;border:1px solid #ead79e;background:#fff9e7;border-radius:12px;color:#685926}.plan-pills{display:flex;flex-wrap:wrap;gap:7px}.plan-pill{padding:6px 9px;border-radius:99px;background:#e8f5f7;color:#176879;font-size:11px;font-weight:700}
+.site-footer{padding:60px 0 24px;background:#050d17;border-top:1px solid #17273a;color:#90a4b8}.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1.4fr;gap:40px}.footer-grid>div{display:flex;flex-direction:column;gap:9px}.footer-grid b{color:#fff}.footer-grid a{font-size:13px}.footer-grid p{font-size:13px}.footer-brand{margin-bottom:8px}.text-link{color:var(--cyan)!important;font-weight:800}.footer-bottom{border-top:1px solid #152536;margin-top:34px;padding-top:20px;display:flex;justify-content:space-between;font-size:11px}
+@media(max-width:1050px){.main-nav{gap:16px;font-size:12px}.hero-grid,.split-grid,.advisor-hero-grid{grid-template-columns:1fr}.stack-grid{grid-template-columns:repeat(3,1fr)}.process-grid,.feature-grid,.service-grid{grid-template-columns:repeat(2,1fr)}.solution-domain-grid,.training-grid,.industry-grid{grid-template-columns:repeat(2,1fr)}.architecture-grid{grid-template-columns:repeat(2,1fr)}.layer-timeline{grid-template-columns:repeat(3,1fr)}.advisor-app{grid-template-columns:250px 1fr}.option-grid.compact{grid-template-columns:repeat(2,1fr)}.value-priority-grid{grid-template-columns:repeat(2,1fr)}.plan-cover{grid-template-columns:1fr}.solution-options,.plan-summary-grid,.opportunity-grid,.tech-grid,.kpi-grid,.budget-grid,.assumption-grid{grid-template-columns:repeat(2,1fr)}.roadmap{grid-template-columns:repeat(2,1fr)}.footer-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:800px){.announcement span{display:none}.nav-wrap{height:72px}.brand-word small{display:none}.main-nav{display:none;position:absolute;left:20px;right:20px;top:78px;padding:14px;background:#0b1b2d;border:1px solid var(--line);border-radius:16px;flex-direction:column;align-items:stretch;box-shadow:var(--shadow)}.main-nav.open{display:flex}.main-nav a{padding:10px}.nav-toggle{display:block}.hero,.page-hero,.advisor-hero{padding:60px 0}.hero h1,.page-hero h1,.advisor-hero h1{letter-spacing:-2.5px}.value-strip .container{align-items:flex-start;flex-direction:column}.process-grid,.feature-grid,.stack-grid,.solution-domain-grid,.architecture-grid,.training-grid,.service-grid,.industry-grid,.pricing-grid,.budget-components,.layer-timeline{grid-template-columns:1fr}.cta-card{align-items:flex-start;flex-direction:column}.advisor-app{display:block}.advisor-sidebar{border-right:0;border-bottom:1px solid var(--line)}.advisor-steps{grid-template-columns:repeat(3,1fr)}.advisor-steps li{grid-template-columns:32px}.advisor-steps li div{display:none}.option-grid,.option-grid.compact,.value-priority-grid,.two-col{grid-template-columns:1fr}.advisor-panel{padding:22px}.advisor-nav{grid-template-columns:1fr 1fr}.advisor-save{display:none}.plan-toolbar{align-items:flex-start;flex-direction:column}.plan-body,.plan-cover{padding:24px}.solution-options,.plan-summary-grid,.opportunity-grid,.tech-grid,.kpi-grid,.budget-grid,.assumption-grid,.roadmap,.guardrail-list{grid-template-columns:1fr}.learning-module{grid-template-columns:42px 1fr}.module-badge{grid-column:2}.footer-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.container{width:min(100% - 28px,var(--max))}.hero h1,.page-hero h1,.advisor-hero h1{font-size:44px}.hero-lead,.page-hero p,.advisor-hero p{font-size:16px}.hero-actions .btn{width:100%}.process-grid,.feature-grid{grid-template-columns:1fr}.role-list a{align-items:flex-start;flex-direction:column}.advisor-steps{grid-template-columns:repeat(2,1fr)}.plan-meta{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr}.footer-bottom{flex-direction:column;gap:6px}}
+@media print{body{background:#fff!important}.announcement,.site-header,.site-footer,.plan-toolbar{display:none!important}.plan-section{padding:0;background:#fff}.generated-plan{border:0;box-shadow:none}.plan-cover{print-color-adjust:exact;-webkit-print-color-adjust:exact}.plan-section-block{break-inside:avoid}.solution-option,.roadmap-phase,.learning-module,.tech-card{break-inside:avoid}}
+
+/* V3.2 additions */
+.course-price-row{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:16px 0}
+.course-price-row div{padding:12px;border:1px solid var(--line);border-radius:12px;background:#0a1829}
+.course-price-row span{display:block;color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.7px}
+.course-price-row b{display:block;margin-top:3px;font-size:16px;color:#fff}
+.course-meta{display:flex;flex-wrap:wrap;gap:7px;margin:10px 0 14px}
+.course-meta span{font-size:11px;padding:5px 8px;border:1px solid #29415e;border-radius:99px;color:#bad0df;background:#0b1a2e}
+.course-card-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.contact-channel-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.contact-channel{padding:22px;border:1px solid var(--line);border-radius:18px;background:#0d1d31}
+.contact-channel span{display:block;color:var(--cyan);font-size:11px;font-weight:900;letter-spacing:1px;text-transform:uppercase}
+.contact-channel b{display:block;font-size:19px;margin:8px 0}
+.contact-channel small{color:var(--muted)}
+.contact-channel a{color:#fff;text-decoration:underline;text-underline-offset:3px}
+.estimate-box{border:1px solid #3e7180;border-radius:18px;padding:20px;background:linear-gradient(120deg,rgba(103,213,228,.10),rgba(132,168,255,.06));margin:16px 0}
+.estimate-box h3{margin:0 0 8px}
+.estimate-total{font-size:30px;font-weight:900;color:var(--cyan)}
+.fixed-course-rec{display:grid;grid-template-columns:1.2fr .7fr .7fr;gap:10px;align-items:center;border:1px solid var(--line);border-radius:14px;padding:15px;margin:9px 0;background:#0d1d30}
+.fixed-course-rec small{color:var(--muted)}
+.footer-contact{display:flex;flex-wrap:wrap;gap:9px;margin-top:12px;color:#b7c8d8;font-size:12px}
+.footer-contact a{border-bottom:1px dotted #668096}
+@media(max-width:1000px){.contact-channel-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:800px){.contact-channel-grid{grid-template-columns:1fr}.course-price-row{grid-template-columns:1fr}.fixed-course-rec{grid-template-columns:1fr}}
+
+
+
+/* V3.3 endorsed-brand architecture */
+.brand-endorsement{
+  margin-top:14px;
+  padding-top:12px;
+  border-top:1px solid rgba(255,255,255,.08);
+  color:#8fa8bc;
+  font-size:11px;
+  line-height:1.5;
+}
+.brand-endorsement b{color:#c7d8e6;font-weight:800}
+.brand-relationship{
+  border:1px solid rgba(103,213,228,.22);
+  border-radius:18px;
+  padding:24px;
+  background:linear-gradient(135deg,rgba(103,213,228,.07),rgba(132,168,255,.04));
+}
+.brand-relationship .relationship-label{
+  display:inline-block;
+  margin-bottom:10px;
+  color:var(--cyan);
+  font-size:11px;
+  font-weight:900;
+  letter-spacing:1px;
+  text-transform:uppercase;
+}
+.brand-relationship h3{margin:0 0 9px}
+.brand-relationship p{margin:0;color:var(--muted)}
+.brand-relationship strong{color:#fff}
+.shared-channel-note{
+  margin-top:16px;
+  padding:14px 16px;
+  border-left:3px solid var(--cyan);
+  border-radius:8px;
+  background:rgba(103,213,228,.06);
+  color:#aac0d1;
+  font-size:12px;
+}
+
+
+
+/* Enterprise AI Skills — AI Business Advisor chatbot */
+.eais-chat-launcher{
+  position:fixed;right:22px;bottom:22px;z-index:9998;
+  display:flex;align-items:center;gap:10px;
+  padding:12px 16px;border-radius:999px;border:1px solid rgba(103,213,228,.35);
+  background:linear-gradient(135deg,#132744,#17223d);
+  color:#fff;font-weight:850;box-shadow:0 18px 50px rgba(0,0,0,.35);
+  cursor:pointer;
+}
+.eais-chat-launcher:hover{transform:translateY(-1px);border-color:#67d5e4}
+.eais-chat-dot{width:10px;height:10px;border-radius:50%;background:#74e0a5;box-shadow:0 0 0 5px rgba(116,224,165,.10)}
+.eais-chat-panel{
+  position:fixed;right:22px;bottom:82px;z-index:9999;
+  width:min(390px,calc(100vw - 28px));height:min(620px,calc(100vh - 120px));
+  display:none;flex-direction:column;overflow:hidden;
+  border:1px solid #29425f;border-radius:22px;
+  background:#0b1628;box-shadow:0 30px 80px rgba(0,0,0,.48);
+}
+.eais-chat-panel.open{display:flex}
+.eais-chat-head{
+  display:flex;align-items:center;justify-content:space-between;gap:14px;
+  padding:16px 18px;background:linear-gradient(135deg,#122944,#17223d);
+  border-bottom:1px solid #233a55;
+}
+.eais-chat-title{display:flex;align-items:center;gap:10px}
+.eais-chat-title b{display:block;font-size:15px}
+.eais-chat-title small{display:block;color:#9ab1c5;margin-top:2px;font-size:11px}
+.eais-chat-close{border:0;background:transparent;color:#b8c9d8;font-size:24px;cursor:pointer;padding:2px 6px}
+.eais-chat-body{flex:1;overflow:auto;padding:16px}
+.eais-msg{display:flex;margin:0 0 12px}
+.eais-msg.bot{justify-content:flex-start}
+.eais-msg.user{justify-content:flex-end}
+.eais-bubble{
+  max-width:88%;padding:11px 13px;border-radius:15px;
+  font-size:13px;line-height:1.55;
+}
+.eais-msg.bot .eais-bubble{background:#13243b;border:1px solid #263e5a;color:#eef6fb;border-bottom-left-radius:5px}
+.eais-msg.user .eais-bubble{background:#67d5e4;color:#06111f;border-bottom-right-radius:5px;font-weight:700}
+.eais-quick{display:flex;flex-wrap:wrap;gap:7px;margin:6px 0 14px}
+.eais-chip{
+  border:1px solid #355474;background:#0f1f34;color:#d7e6f0;
+  padding:8px 10px;border-radius:999px;font-size:11px;font-weight:800;cursor:pointer;
+}
+.eais-chip:hover{border-color:#67d5e4;color:#fff}
+.eais-chat-input-wrap{
+  padding:12px;border-top:1px solid #223852;background:#0a1423;
+}
+.eais-chat-input-row{display:flex;gap:8px}
+.eais-chat-input{
+  flex:1;min-width:0;border:1px solid #2c4562;border-radius:13px;
+  background:#101f33;color:#fff;padding:11px 12px;outline:none;font:inherit;font-size:13px;
+}
+.eais-chat-input:focus{border-color:#67d5e4}
+.eais-chat-send{
+  border:0;border-radius:12px;background:#67d5e4;color:#06111f;
+  padding:0 14px;font-weight:900;cursor:pointer;
+}
+.eais-chat-note{margin-top:8px;color:#738da3;font-size:10px;line-height:1.4}
+.eais-chat-card{
+  margin:8px 0;padding:12px;border:1px solid #28415e;border-radius:14px;background:#0f1f33
+}
+.eais-chat-card b{display:block;color:#fff;margin-bottom:4px}
+.eais-chat-card small{display:block;color:#9bb1c3;line-height:1.45}
+.eais-chat-card a{display:inline-block;margin-top:8px;color:#67d5e4;font-size:12px;font-weight:900}
+@media(max-width:700px){
+  .eais-chat-launcher{right:12px;bottom:12px}
+  .eais-chat-panel{right:10px;bottom:72px;width:calc(100vw - 20px);height:calc(100vh - 92px);border-radius:18px}
+}
+@media print{
+  .eais-chat-launcher,.eais-chat-panel{display:none!important}
+}
+
+</style>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<meta property="og:title" content="Privacy &amp; Responsible Use | Enterprise AI Skills">
+<meta property="og:description" content="Privacy and responsible-use guidance for Enterprise AI Skills public planning tools and client communications.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://enterpriseaiskills.com/privacy.html">
+<meta name="twitter:card" content="summary">
+<link rel="manifest" href="site.webmanifest">
 </head>
 <body>
-  <header class="site-header"><div class="container header-inner"><a class="brand" href="index.html"><img src="assets/logo.svg" alt="Enterprise AI Skills"></a><nav class="site-nav" style="display:flex"><a href="index.html">Back to website</a></nav></div></header>
-  <main class="section"><div class="container" style="max-width:850px">
-    <p class="eyebrow eyebrow-dark">Legal draft</p><h1 style="font-size:clamp(2.5rem,5vw,4.5rem);line-height:1.02;letter-spacing:-.05em">Privacy Policy</h1>
-    <p><strong>Before launch:</strong> replace bracketed text, confirm your data practices, and have this reviewed for Canadian privacy-law compliance.</p>
-    <h2>1. Organization</h2><p>Enterprise AI Skills is an operating name of [Exact Federal Corporation Name] (“we,” “us,” or “our”). Contact: <a href="mailto:contact@enterpriseaiskills.com">contact@enterpriseaiskills.com</a>.</p>
-    <h2>2. Information we collect</h2><p>We may collect contact details, organization information, training requirements, communications, transaction records, website analytics and information submitted through forms or email.</p>
-    <h2>3. How we use information</h2><p>We use information to respond to inquiries, prepare proposals, deliver training, administer contracts, process payments, improve services, maintain security and meet legal obligations.</p>
-    <h2>4. Sharing</h2><p>We do not sell personal information. We may use service providers for hosting, email, analytics, payment processing and business operations, subject to appropriate safeguards.</p>
-    <h2>5. Retention and security</h2><p>We retain information only as reasonably needed for the purposes described and apply administrative, technical and organizational safeguards appropriate to the information.</p>
-    <h2>6. Your choices</h2><p>You may request access or correction, ask questions about our privacy practices, or withdraw consent where applicable by contacting us.</p>
-    <h2>7. Updates</h2><p>We may update this policy. The effective date will be shown here: [Effective Date].</p>
-  </div></main>
-  <footer class="site-footer"><div class="container">Draft only—not legal advice.</div></footer>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="announcement"><div class="container"><strong>AI that creates measurable business value.</strong><span>Customers • Products & Services • Processes • Decisions • People • Performance</span></div></div>
+<header class="site-header"><div class="container nav-wrap">
+<a class="brand" href="index.html" aria-label="Enterprise AI Skills home"><span class="brand-mark" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="2" y="2" width="24" height="24" rx="7" stroke="currentColor"/><path d="M8 8h5v5H8zm8 0h4v5h-4zM8 16h5v4H8z" stroke="currentColor" stroke-width="1.6"/><circle cx="18" cy="18" r="2.7" stroke="#f4c653" stroke-width="1.6"/></svg></span><span class="brand-word"><b>Enterprise<span class="accent">AI</span>Skills</b><small>BUSINESS VALUE • AI • CLOUD • DATA</small></span></a>
+<button class="nav-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+<nav class="main-nav" aria-label="Main navigation">
+<a href="advisor.html">AI Solution Engine</a>
+<a href="solutions.html">Solutions</a>
+<a href="training.html">Training</a>
+<a href="services.html">Services & Pricing</a>
+<a href="industries.html">Industries</a>
+<a href="about.html">About</a>
+<a class="nav-cta" href="advisor.html">Build My Plan</a>
+</nav>
+</div></header>
+<main id="main">
+<section class="page-hero"><div class="container narrow"><span class="eyebrow">PRIVACY & RESPONSIBLE USE</span><h1>Use the planning engine<br><span>without sharing sensitive data.</span></h1><p>The current website version stores advisor progress in the visitor’s browser. Do not enter confidential, personal, client, proprietary, regulated or security-sensitive information.</p></div></section>
+<section class="section"><div class="container narrow prose"><h2>Planning engine</h2><p>The advisor is designed to work with high-level business context. It does not require names, customer records, employee records, passwords, account numbers, private documents or sensitive operational details.</p><h2>Local browser storage</h2><p>The advisor may save non-sensitive answers in browser local storage so a visitor can continue the plan. Clearing browser site data removes this local progress.</p><h2>Generated recommendations</h2><p>The output is planning guidance. It should be reviewed against organizational policy, security requirements, contracts, applicable law and professional obligations before implementation.</p><h2>Vendor and pricing information</h2><p>AI products, features, availability and prices change frequently. Technology examples on this site are illustrative. Current vendor terms and pricing should be verified before procurement. Enterprise AI Skills service ranges are planning bands, not binding quotes.</p><h2>Responsible AI</h2><p>Human accountability, privacy, security, verification, fairness, copyright, data governance and fit-for-purpose evaluation should be considered throughout adoption.</p></div></section>
+
+<section class="section alt"><div class="container narrow">
+<div class="brand-relationship">
+<span class="relationship-label">Operational note</span>
+<h3>Shared communication infrastructure</h3>
+<p>Enterprise AI Skills may use AliTechGrid Canada communication channels for business inquiries and support. Do not submit confidential, regulated, personal, client, security-sensitive or proprietary information through the public AI planning interface unless an approved secure process has been established.</p>
+</div>
+</div></section>
+
+</main>
+<footer class="site-footer"><div class="container footer-grid"><div><a class="brand footer-brand" href="index.html"><span class="brand-mark"><svg width="24" height="24" viewBox="0 0 28 28" fill="none"><rect x="2" y="2" width="24" height="24" rx="7" stroke="currentColor"/><path d="M8 8h5v5H8zm8 0h4v5h-4zM8 16h5v4H8z" stroke="currentColor" stroke-width="1.6"/><circle cx="18" cy="18" r="2.7" stroke="#f4c653" stroke-width="1.6"/></svg></span><span class="brand-word"><b>Enterprise<span class="accent">AI</span>Skills</b><small>Business-value AI capability</small></span></a><p>Practical AI advisory, workforce capability, training and implementation planning for modern organizations and professionals.</p><div class="footer-contact"><a href="tel:+17783584040">+1 778 358 4040</a><a href="https://wa.me/16726719982">WhatsApp +1 672 671 9982</a><a href="mailto:contact@alitechgrid.com">contact@alitechgrid.com</a></div><div class="brand-endorsement">Enterprise AI Skills is an independent specialist brand and <b>an AliTechGrid Canada initiative</b>. Shared business communication channels are used for client service and operations.</div></div><div><b>Explore</b><a href="advisor.html">AI Solution Engine</a><a href="solutions.html">Business Solutions</a><a href="training.html">Training</a><a href="services.html">Services & Pricing</a></div><div><b>Company</b><a href="industries.html">Industries</a><a href="about.html">About</a><a href="contact.html">Contact</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></div><div><b>Start here</b><p>Describe the work once. Get a reasoned AI solution, learning path, implementation roadmap, budget and measures of success.</p><a class="text-link" href="advisor.html">Build my plan →</a></div></div><div class="container footer-bottom"><span>© 2026 Enterprise AI Skills</span><span>Plan → Learn → Apply → Measure → Improve</span></div></footer>
+<script>
+
+(()=>{const toggle=document.querySelector('.nav-toggle');const nav=document.querySelector('.main-nav');if(toggle&&nav){toggle.addEventListener('click',()=>{const open=nav.classList.toggle('open');toggle.setAttribute('aria-expanded',String(open));toggle.textContent=open?'×':'☰'});}document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{const id=a.getAttribute('href');if(id.length>1){const el=document.querySelector(id);if(el){e.preventDefault();el.scrollIntoView({behavior:'smooth'});}}}));})();
+
+</script>
+
+<button class="eais-chat-launcher" id="eaisChatLauncher" aria-haspopup="dialog" aria-controls="eaisChatPanel" aria-expanded="false">
+  <span class="eais-chat-dot" aria-hidden="true"></span>
+  <span>AI Business Advisor</span>
+</button>
+<section class="eais-chat-panel" id="eaisChatPanel" role="dialog" aria-modal="false" aria-label="Enterprise AI Skills AI Business Advisor">
+  <div class="eais-chat-head">
+    <div class="eais-chat-title">
+      <span class="eais-chat-dot" aria-hidden="true"></span>
+      <div><b>AI Business Advisor</b><small>Training • Solutions • Budget • Next steps</small></div>
+    </div>
+    <button class="eais-chat-close" id="eaisChatClose" aria-label="Close chat">×</button>
+  </div>
+  <div class="eais-chat-body" id="eaisChatBody"></div>
+  <div class="eais-chat-input-wrap">
+    <div class="eais-chat-input-row">
+      <input class="eais-chat-input" id="eaisChatInput" type="text" maxlength="500" placeholder="Describe your work or problem..." aria-label="Message the AI Business Advisor">
+      <button class="eais-chat-send" id="eaisChatSend">Send</button>
+    </div>
+    <div class="eais-chat-note">Do not enter confidential, personal, regulated, proprietary or security-sensitive information.</div>
+  </div>
+</section>
+
+<script>
+
+(function(){
+  const $ = s => document.querySelector(s);
+  const launcher = $('#eaisChatLauncher');
+  const panel = $('#eaisChatPanel');
+  const closeBtn = $('#eaisChatClose');
+  const body = $('#eaisChatBody');
+  const input = $('#eaisChatInput');
+  const send = $('#eaisChatSend');
+  if(!launcher || !panel || !body) return;
+
+  const state = {started:false,lastTopic:''};
+
+  function esc(s){return String(s||'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));}
+  function scrollBottom(){body.scrollTop=body.scrollHeight;}
+  function bot(text, html=false){
+    const row=document.createElement('div'); row.className='eais-msg bot';
+    const b=document.createElement('div'); b.className='eais-bubble';
+    if(html) b.innerHTML=text; else b.textContent=text;
+    row.appendChild(b); body.appendChild(row); scrollBottom();
+  }
+  function user(text){
+    const row=document.createElement('div'); row.className='eais-msg user';
+    const b=document.createElement('div'); b.className='eais-bubble'; b.textContent=text;
+    row.appendChild(b); body.appendChild(row); scrollBottom();
+  }
+  function chips(items){
+    const wrap=document.createElement('div'); wrap.className='eais-quick';
+    items.forEach(([label,value])=>{
+      const btn=document.createElement('button'); btn.className='eais-chip'; btn.textContent=label;
+      btn.addEventListener('click',()=>handle(value||label,label));
+      wrap.appendChild(btn);
+    });
+    body.appendChild(wrap); scrollBottom();
+  }
+  function card(title,desc,href,label){
+    bot(`<div class="eais-chat-card"><b>${esc(title)}</b><small>${esc(desc)}</small><a href="${href}">${esc(label||'Open →')}</a></div>`,true);
+  }
+  function welcome(){
+    if(state.started) return;
+    state.started=true;
+    bot("Welcome. You do not need to know AI terminology. Tell me what you want to improve, and I’ll guide you to the fastest useful next step.");
+    chips([
+      ["Improve customers","customers"],
+      ["Improve a process","process"],
+      ["Train myself","individual training"],
+      ["Train my team","team training"],
+      ["Get budget & schedule","estimate"],
+      ["Solve a business problem","solution"]
+    ]);
+  }
+  function classify(t){
+    t=t.toLowerCase();
+    if(/price|pricing|cost|budget|estimate|quote|quotation|how much/.test(t)) return 'estimate';
+    if(/team|staff|employee|workforce|department|group|supervisor/.test(t) && /train|learn|skill|course/.test(t)) return 'teamtraining';
+    if(/myself|individual|career|job|personal/.test(t) || (/train|learn|course/.test(t) && !/team|staff|employee|workforce|department|group/.test(t))) return 'individual';
+    if(/customer|client|service|sales|response|experience/.test(t)) return 'customers';
+    if(/product|service offering|innovation|new service|new product/.test(t)) return 'products';
+    if(/process|workflow|manual|repetitive|automation|delay|slow|approval/.test(t)) return 'process';
+    if(/decision|analysis|report|insight|forecast|planning/.test(t)) return 'decisions';
+    if(/people|manager|boss|colleague|team member|direct report|communication|meeting|hr/.test(t)) return 'people';
+    if(/performance|productivity|quality|cost|revenue|growth|kpi/.test(t)) return 'performance';
+    if(/problem|solution|implement|implementation|strategy|advis/.test(t)) return 'solution';
+    if(/contact|phone|whatsapp|email|talk|speak/.test(t)) return 'contact';
+    return 'general';
+  }
+  function handle(value,shown){
+    const text=(value||'').trim(); if(!text) return;
+    user(shown||text); input.value='';
+    const intent=classify(text);
+    state.lastTopic=intent;
+
+    if(intent==='estimate'){
+      bot("For a useful estimate, the site should first understand your role, organization size, priority, urgency and whether you need training only or implementation support. The Solution Engine then gives a planning range, budget structure and schedule.");
+      card("Generate an Estimate Plan","Receive a recommended option, estimated investment range, midpoint planning figure, schedule and assumptions.","advisor.html","Generate estimate →");
+      chips([["Fixed course prices","fixed courses"],["Private team training","team training"],["Speak to us","contact"]]);
+      return;
+    }
+    if(intent==='teamtraining'){
+      bot("For teams, the right program depends on role, business function, current AI capability and the work you want to improve. You can choose a fixed private-team course or generate a customized team plan.");
+      card("Private Team Training","Role-based practical AI training with published standard fees for many team programs.","training.html#fixed-courses","View team options →");
+      card("Custom Team AI Plan","Best when you need department-specific workflows, governance, implementation, KPIs or change support.","advisor.html","Build team plan →");
+      return;
+    }
+    if(intent==='individual'){
+      bot("For an individual, I recommend starting from your actual job rather than learning random AI tools. The site can map AI skills to the work you do now and the capability you want to build.");
+      card("AI Career & Professional Productivity","A fixed practical program for individual professionals.","training.html#fixed-courses","View course →");
+      card("Personal AI Work Plan","Generate a more tailored learning and workplace application path.","advisor.html","Build my plan →");
+      return;
+    }
+    if(intent==='customers'){
+      bot("Good priority. AI can support customer communication, service quality, response time, personalization, knowledge access, sales support and customer insight. The best choice depends on your current bottleneck and how customer data is handled.");
+      chips([["Faster customer response","process"],["Better customer insights","decisions"],["Train customer-facing staff","team training"],["Build full solution plan","solution"]]);
+      return;
+    }
+    if(intent==='products'){
+      bot("For products and services, useful AI opportunities include research, customer insight, service design, content, quality, personalization, knowledge support and faster iteration. The engine should compare quick wins with higher-value transformation options.");
+      card("Build Product/Service AI Plan","Map opportunities, skills, implementation, budget, schedule and measures of value.","advisor.html","Start plan →");
+      return;
+    }
+    if(intent==='process'){
+      bot("Process improvement is one of the strongest AI value areas. Start with work that is repetitive, slow, manual, error-prone or dependent on too much searching, copying, reporting or follow-up.");
+      bot("A strong plan normally compares: 1) AI-assisted work, 2) workflow automation, and 3) deeper process redesign—then recommends the least complex option that delivers the required value.");
+      card("Analyze My Process","Generate alternative solutions, recommended skills, implementation steps, estimate and KPIs.","advisor.html","Analyze process →");
+      return;
+    }
+    if(intent==='decisions'){
+      bot("AI can improve decisions by helping people summarize evidence, compare options, identify patterns, prepare reports and surface risks. Human accountability remains essential—especially for material, regulated or people-related decisions.");
+      card("Build Decision-Support Plan","Map the decision, information sources, skills, controls, implementation and measures.","advisor.html","Build plan →");
+      return;
+    }
+    if(intent==='people'){
+      bot("For people and collaboration, focus on work between managers, direct reports, colleagues, customers, suppliers and stakeholders: meetings, communication, coaching, knowledge sharing, documentation and coordination.");
+      card("AI for Managers / Supervisors / Teams","Choose a fixed role-based training path.","training.html#fixed-courses","View training →");
+      return;
+    }
+    if(intent==='performance'){
+      bot("Performance should be measured in business terms—not AI usage. Useful measures include time saved, turnaround time, quality, error rate, customer response, revenue support, cost, employee capability and decision speed.");
+      card("Build a Measurable AI Plan","The Solution Engine links recommendations to KPIs and implementation milestones.","advisor.html","Build measurable plan →");
+      return;
+    }
+    if(intent==='solution'){
+      bot("The fastest route is to describe the work once. The AI Solution Engine will map the problem to business value, compare multiple approaches, recommend the best-fit option, and produce learning, implementation, estimated budget, schedule and KPIs.");
+      card("AI Business Value & Workforce Solution Engine","For customers, products/services, processes, decisions, people and performance.","advisor.html","Build my solution plan →");
+      return;
+    }
+    if(intent==='contact'){
+      bot("You can use the shared business communication channels below. Enterprise AI Skills remains the specialist client-facing brand.");
+      bot(`<div class="eais-chat-card"><b>Contact Enterprise AI Skills</b><small>Business: +1 778 358 4040<br>WhatsApp: +1 672 671 9982<br>Email: contact@alitechgrid.com</small><a href="contact.html">Open contact page →</a></div>`,true);
+      return;
+    }
+    if(/fixed course/.test(text.toLowerCase())){
+      card("Standard AI Courses","Published programs for executives, managers, supervisors, employees, technical teams and individuals.","training.html#fixed-courses","View courses →");
+      return;
+    }
+
+    bot("I can help with that. To avoid wasting your time, choose the closest business objective below—or describe the specific work that is causing the problem.");
+    chips([
+      ["Customers","customers"],["Products & Services","products"],["Processes","process"],
+      ["Decisions","decisions"],["People","people"],["Performance","performance"],
+      ["Budget & schedule","estimate"],["Training","team training"]
+    ]);
+  }
+
+  launcher.addEventListener('click',()=>{
+    const open=panel.classList.toggle('open');
+    launcher.setAttribute('aria-expanded',open?'true':'false');
+    if(open){welcome();setTimeout(()=>input.focus(),50);}
+  });
+  closeBtn.addEventListener('click',()=>{panel.classList.remove('open');launcher.setAttribute('aria-expanded','false');launcher.focus();});
+  send.addEventListener('click',()=>handle(input.value));
+  input.addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();handle(input.value);}});
+  document.addEventListener('keydown',e=>{if(e.key==='Escape'&&panel.classList.contains('open'))closeBtn.click();});
+})();
+
+</script>
 </body></html>

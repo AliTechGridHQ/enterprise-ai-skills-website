@@ -1,0 +1,15 @@
+{
+  "name": "Enterprise AI Skills",
+  "short_name": "EnterpriseAI",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0B1628",
+  "theme_color": "#0B1628",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
