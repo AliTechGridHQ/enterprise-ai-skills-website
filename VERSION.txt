@@ -33,3 +33,4 @@ V4.1 Update:
 - Chatbot is a privacy-conscious client-side advisor (no external AI/API key).
 - Routes users to training, solution engine, estimates, scheduling and contact paths.
 - Updated homepage wording to: "Need AI training—or a complete business solution?"
+Cloudflare deployment refresh: 2026-08-14
