@@ -96,80 +96,56 @@
 
 
 
-/* Enterprise AI Skills — AI Business Advisor chatbot */
+/* V4.7 repaired production branding */
+.brand.brand-logo-link{display:flex;align-items:center;min-width:320px;line-height:1}
+.brand-logo-img{display:block;width:340px;max-width:100%;height:auto}
+.footer-brand-logo{display:block;width:270px;max-width:100%;height:auto;margin-bottom:12px}
+@media(max-width:1180px){
+  .brand.brand-logo-link{min-width:275px}.brand-logo-img{width:295px}.main-nav{gap:18px}
+}
+@media(max-width:900px){.brand.brand-logo-link{min-width:0}.brand-logo-img{width:270px}}
+@media(max-width:520px){.brand-logo-img{width:235px}}
+
+
+/* Enterprise AI Skills — AI Business Advisor */
 .eais-chat-launcher{
-  position:fixed;right:22px;bottom:22px;z-index:9998;
-  display:flex;align-items:center;gap:10px;
+  position:fixed;right:22px;bottom:22px;z-index:9998;display:flex;align-items:center;gap:10px;
   padding:12px 16px;border-radius:999px;border:1px solid rgba(103,213,228,.35);
-  background:linear-gradient(135deg,#132744,#17223d);
-  color:#fff;font-weight:850;box-shadow:0 18px 50px rgba(0,0,0,.35);
-  cursor:pointer;
+  background:linear-gradient(135deg,#132744,#17223d);color:#fff;font-weight:850;
+  box-shadow:0 18px 50px rgba(0,0,0,.35);cursor:pointer
 }
 .eais-chat-launcher:hover{transform:translateY(-1px);border-color:#67d5e4}
 .eais-chat-dot{width:10px;height:10px;border-radius:50%;background:#74e0a5;box-shadow:0 0 0 5px rgba(116,224,165,.10)}
 .eais-chat-panel{
-  position:fixed;right:22px;bottom:82px;z-index:9999;
-  width:min(390px,calc(100vw - 28px));height:min(620px,calc(100vh - 120px));
-  display:none;flex-direction:column;overflow:hidden;
-  border:1px solid #29425f;border-radius:22px;
-  background:#0b1628;box-shadow:0 30px 80px rgba(0,0,0,.48);
+  position:fixed;right:22px;bottom:82px;z-index:9999;width:min(390px,calc(100vw - 28px));
+  height:min(620px,calc(100vh - 120px));display:none;flex-direction:column;overflow:hidden;
+  border:1px solid #29425f;border-radius:22px;background:#0b1628;box-shadow:0 30px 80px rgba(0,0,0,.48)
 }
 .eais-chat-panel.open{display:flex}
-.eais-chat-head{
-  display:flex;align-items:center;justify-content:space-between;gap:14px;
-  padding:16px 18px;background:linear-gradient(135deg,#122944,#17223d);
-  border-bottom:1px solid #233a55;
-}
-.eais-chat-title{display:flex;align-items:center;gap:10px}
-.eais-chat-title b{display:block;font-size:15px}
+.eais-chat-head{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:16px 18px;background:linear-gradient(135deg,#122944,#17223d);border-bottom:1px solid #233a55}
+.eais-chat-title{display:flex;align-items:center;gap:10px}.eais-chat-title b{display:block;font-size:15px}
 .eais-chat-title small{display:block;color:#9ab1c5;margin-top:2px;font-size:11px}
 .eais-chat-close{border:0;background:transparent;color:#b8c9d8;font-size:24px;cursor:pointer;padding:2px 6px}
-.eais-chat-body{flex:1;overflow:auto;padding:16px}
-.eais-msg{display:flex;margin:0 0 12px}
-.eais-msg.bot{justify-content:flex-start}
-.eais-msg.user{justify-content:flex-end}
-.eais-bubble{
-  max-width:88%;padding:11px 13px;border-radius:15px;
-  font-size:13px;line-height:1.55;
-}
+.eais-chat-body{flex:1;overflow:auto;padding:16px}.eais-msg{display:flex;margin:0 0 12px}
+.eais-msg.bot{justify-content:flex-start}.eais-msg.user{justify-content:flex-end}
+.eais-bubble{max-width:88%;padding:11px 13px;border-radius:15px;font-size:13px;line-height:1.55}
 .eais-msg.bot .eais-bubble{background:#13243b;border:1px solid #263e5a;color:#eef6fb;border-bottom-left-radius:5px}
 .eais-msg.user .eais-bubble{background:#67d5e4;color:#06111f;border-bottom-right-radius:5px;font-weight:700}
 .eais-quick{display:flex;flex-wrap:wrap;gap:7px;margin:6px 0 14px}
-.eais-chip{
-  border:1px solid #355474;background:#0f1f34;color:#d7e6f0;
-  padding:8px 10px;border-radius:999px;font-size:11px;font-weight:800;cursor:pointer;
-}
+.eais-chip{border:1px solid #355474;background:#0f1f34;color:#d7e6f0;padding:8px 10px;border-radius:999px;font-size:11px;font-weight:800;cursor:pointer}
 .eais-chip:hover{border-color:#67d5e4;color:#fff}
-.eais-chat-input-wrap{
-  padding:12px;border-top:1px solid #223852;background:#0a1423;
-}
-.eais-chat-input-row{display:flex;gap:8px}
-.eais-chat-input{
-  flex:1;min-width:0;border:1px solid #2c4562;border-radius:13px;
-  background:#101f33;color:#fff;padding:11px 12px;outline:none;font:inherit;font-size:13px;
-}
-.eais-chat-input:focus{border-color:#67d5e4}
-.eais-chat-send{
-  border:0;border-radius:12px;background:#67d5e4;color:#06111f;
-  padding:0 14px;font-weight:900;cursor:pointer;
-}
+.eais-chat-input-wrap{padding:12px;border-top:1px solid #223852;background:#0a1423}
+.eais-chat-input-row{display:flex;gap:8px}.eais-chat-input{flex:1;min-width:0;border:1px solid #2c4562;border-radius:13px;background:#101f33;color:#fff;padding:11px 12px;outline:none;font:inherit;font-size:13px}
+.eais-chat-input:focus{border-color:#67d5e4}.eais-chat-send{border:0;border-radius:12px;background:#67d5e4;color:#06111f;padding:0 14px;font-weight:900;cursor:pointer}
 .eais-chat-note{margin-top:8px;color:#738da3;font-size:10px;line-height:1.4}
-.eais-chat-card{
-  margin:8px 0;padding:12px;border:1px solid #28415e;border-radius:14px;background:#0f1f33
-}
-.eais-chat-card b{display:block;color:#fff;margin-bottom:4px}
-.eais-chat-card small{display:block;color:#9bb1c3;line-height:1.45}
+.eais-chat-card{margin:8px 0;padding:12px;border:1px solid #28415e;border-radius:14px;background:#0f1f33}
+.eais-chat-card b{display:block;color:#fff;margin-bottom:4px}.eais-chat-card small{display:block;color:#9bb1c3;line-height:1.45}
 .eais-chat-card a{display:inline-block;margin-top:8px;color:#67d5e4;font-size:12px;font-weight:900}
-@media(max-width:700px){
-  .eais-chat-launcher{right:12px;bottom:12px}
-  .eais-chat-panel{right:10px;bottom:72px;width:calc(100vw - 20px);height:calc(100vh - 92px);border-radius:18px}
-}
-@media print{
-  .eais-chat-launcher,.eais-chat-panel{display:none!important}
-}
+@media(max-width:700px){.eais-chat-launcher{right:12px;bottom:12px}.eais-chat-panel{right:10px;bottom:72px;width:calc(100vw - 20px);height:calc(100vh - 92px);border-radius:18px}}
+@media print{.eais-chat-launcher,.eais-chat-panel{display:none!important}}
 
 </style>
-<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 <meta property="og:title" content="AI Training &amp; Workforce Capability | Enterprise AI Skills">
 <meta property="og:description" content="Role-based AI training for executives, managers, supervisors, employees, technical teams and individuals.">
 <meta property="og:type" content="website">
@@ -322,7 +298,7 @@
 <a class="skip-link" href="#main">Skip to content</a>
 <div class="announcement"><div class="container"><strong>AI that creates measurable business value.</strong><span>Customers • Products & Services • Processes • Decisions • People • Performance</span></div></div>
 <header class="site-header"><div class="container nav-wrap">
-<a class="brand" href="index.html" aria-label="Enterprise AI Skills home"><span class="brand-mark" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="2" y="2" width="24" height="24" rx="7" stroke="currentColor"/><path d="M8 8h5v5H8zm8 0h4v5h-4zM8 16h5v4H8z" stroke="currentColor" stroke-width="1.6"/><circle cx="18" cy="18" r="2.7" stroke="#f4c653" stroke-width="1.6"/></svg></span><span class="brand-word"><b>Enterprise<span class="accent">AI</span>Skills</b><small>BUSINESS VALUE • AI • CLOUD • DATA</small></span></a>
+<a class="brand brand-logo-link" href="index.html" aria-label="Enterprise AI Skills home"><img class="brand-logo-img" src="assets/logo.svg" alt="EnterpriseAISkills — AI Business Value, Workforce, Solutions"></a>
 <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
 <nav class="main-nav" aria-label="Main navigation">
 <a href="advisor.html">AI Solution Engine</a>
@@ -339,9 +315,9 @@
 <section class="section"><div class="container"><div class="section-head"><span class="eyebrow">ROLE PATHWAYS</span><h2>Different responsibilities require different AI capability.</h2></div><div class="training-grid"><article><span class="path-badge">EXECUTIVE</span><h3>AI for CEOs, GMs & Senior Leaders</h3><p>Strategy, portfolio selection, operating model, governance, investment, workforce change, risk and value measurement.</p><ul><li>AI opportunity & portfolio thinking</li><li>Responsible AI governance</li><li>AI investment and ROI logic</li><li>Leading human–AI work redesign</li></ul></article><article><span class="path-badge">MANAGEMENT</span><h3>AI for Managers</h3><p>Department performance, decisions, reporting, staff capability, customer outcomes and process improvement.</p><ul><li>Manager copilots & analysis</li><li>Workflow redesign</li><li>Team standards and verification</li><li>Performance measurement</li></ul></article><article><span class="path-badge">FRONTLINE</span><h3>AI for Supervisors & Team Leads</h3><p>Daily coordination, customer/service quality, documentation, scheduling, coaching and operational consistency.</p><ul><li>Daily AI workflows</li><li>Communication & documentation</li><li>Quality checks</li><li>Escalation and human review</li></ul></article><article><span class="path-badge">WORKFORCE</span><h3>AI for Employees & Business Teams</h3><p>Research, documents, email, meetings, data interpretation, customer work and personal productivity.</p><ul><li>AI foundations & safe use</li><li>Effective prompting</li><li>Role-specific practice</li><li>Reusable workflows</li></ul></article><article><span class="path-badge">TECHNICAL</span><h3>AI for IT, Cloud, Data & Innovation</h3><p>Enterprise AI platforms, APIs, agents, integration, evaluation, security, observability and deployment.</p><ul><li>Model & platform selection</li><li>RAG / knowledge grounding</li><li>Agentic workflows</li><li>Cloud & sovereign AI patterns</li></ul></article><article><span class="path-badge">INDIVIDUAL</span><h3>AI for Career & Professional Growth</h3><p>Practical AI fluency, productivity, research, communication and job-specific capability with a personal action plan.</p><ul><li>AI literacy</li><li>Job-specific workflows</li><li>Portfolio / evidence of skill</li><li>Continuous learning plan</li></ul></article></div></div></section>
 
 <section class="section alt" id="fixed-courses"><div class="container">
-<div class="section-head"><span class="eyebrow">READY-TO-BOOK STANDARD COURSES</span>
-<h2>Prefer a fixed course instead of a custom plan?</h2>
-<p>Choose a role-based course with a defined duration, practical outcomes and transparent standard fee. Use the AI Solution Engine when you need a customized workforce, process, technology, budget or implementation plan.</p></div>
+<div class="section-head"><span class="eyebrow">READY-TO-BOOK STANDARD TRAINING</span>
+<h2>Prefer standard training instead of a custom plan?</h2>
+<p>Choose a role-based training program with a defined duration, practical outcomes and transparent standard fee. Use the AI Solution Engine when you need a customized workforce, process, technology, budget or implementation plan.</p></div>
 <div class="training-grid">
 <article><span class="path-badge">FOUNDATION · ALL ROLES</span><h3>AI Essentials at Work</h3><div class="course-meta"><span>3 hours</span><span>Beginner</span><span>Live virtual</span></div><p>Plain-language AI fundamentals, safe use, effective prompting and immediate workplace application.</p><ul><li>What AI can and cannot do</li><li>Privacy, verification and responsible use</li><li>Prompts for research, documents and communication</li><li>Personal action checklist</li></ul><div class="course-price-row"><div><span>Individual seat</span><b>CAD 249</b></div><div><span>Private team</span><b>CAD 1,950 · up to 15</b></div></div></article>
 
@@ -355,7 +331,7 @@
 
 <article><span class="path-badge">TECHNICAL</span><h3>Applied Enterprise AI for IT, Cloud, Data & Innovation</h3><div class="course-meta"><span>2 days</span><span>Intermediate</span><span>Live virtual / private</span></div><p>Modern enterprise AI platforms, APIs, RAG, agents, security, evaluation, cloud integration and sovereign/private patterns.</p><ul><li>Architecture and platform selection</li><li>RAG and enterprise knowledge</li><li>Agentic workflow patterns</li><li>Security, evaluation and operations</li></ul><div class="course-price-row"><div><span>Individual seat</span><b>CAD 1,295</b></div><div><span>Private team</span><b>CAD 7,500 · up to 12</b></div></div></article>
 
-<article><span class="path-badge">INDIVIDUAL</span><h3>AI Career & Professional Productivity</h3><div class="course-meta"><span>1 day</span><span>Beginner–Applied</span><span>Live virtual</span></div><p>Build practical AI fluency around your current job, career goals and daily professional work.</p><ul><li>AI literacy and safe use</li><li>Job-specific workflows</li><li>Research, communication and productivity</li><li>30-day personal learning plan</li></ul><div class="course-price-row"><div><span>Individual seat</span><b>CAD 395</b></div><div><span>Private option</span><b>Use team course</b></div></div></article>
+<article><span class="path-badge">INDIVIDUAL</span><h3>AI Career & Professional Productivity</h3><div class="course-meta"><span>1 day</span><span>Beginner–Applied</span><span>Live virtual</span></div><p>Build practical AI fluency around your current job, career goals and daily professional work.</p><ul><li>AI literacy and safe use</li><li>Job-specific workflows</li><li>Research, communication and productivity</li><li>30-day personal learning plan</li></ul><div class="course-price-row"><div><span>Individual seat</span><b>CAD 395</b></div><div><span>Private option</span><b>Use team training</b></div></div></article>
 </div>
 <div class="pricing-note"><b>Standard pricing framework:</b> CAD, before applicable taxes. Virtual delivery is included. On-site travel, custom content, software licences and specialized technical environments are quoted separately. Dates and availability are confirmed before booking.</div>
 </div></section>
@@ -364,7 +340,7 @@
 <section class="section"><div class="container split-grid"><div><span class="eyebrow">DELIVERY MODEL</span><h2>Assess → Train → Apply → Measure.</h2><p class="lead">Every engagement can include pre-assessment, instructor-led learning, hands-on workplace labs, coaching, manager checkpoints and performance evidence. This creates capability—not just attendance certificates.</p></div><div class="delivery-card"><div><b>Private team</b><span>Role-specific, organization-specific</span></div><div><b>Live virtual</b><span>Instructor-led from anywhere</span></div><div><b>On-site</b><span>Hands-on delivery for teams</span></div><div><b>Blended</b><span>Live + practice + coaching</span></div><div><b>Executive</b><span>Short, decision-focused sessions</span></div><div><b>Custom</b><span>Built around client workflows</span></div></div></div></section>
 <section class="section cta-section"><div class="container cta-card"><div><h2>Not sure what your people should learn?</h2><p>That is exactly what the AI Solution Engine is designed to determine.</p></div><a class="btn primary large" href="advisor.html">Generate My Learning Plan →</a></div></section>
 </main>
-<footer class="site-footer"><div class="container footer-grid"><div><a class="brand footer-brand" href="index.html"><span class="brand-mark"><svg width="24" height="24" viewBox="0 0 28 28" fill="none"><rect x="2" y="2" width="24" height="24" rx="7" stroke="currentColor"/><path d="M8 8h5v5H8zm8 0h4v5h-4zM8 16h5v4H8z" stroke="currentColor" stroke-width="1.6"/><circle cx="18" cy="18" r="2.7" stroke="#f4c653" stroke-width="1.6"/></svg></span><span class="brand-word"><b>Enterprise<span class="accent">AI</span>Skills</b><small>Business-value AI capability</small></span></a><p>Practical AI advisory, workforce capability, training and implementation planning for modern organizations and professionals.</p><div class="footer-contact"><a href="tel:+17783584040">+1 778 358 4040</a><a href="https://wa.me/16726719982">WhatsApp +1 672 671 9982</a><a href="mailto:contact@alitechgrid.com">contact@alitechgrid.com</a></div><div class="brand-endorsement">Enterprise AI Skills is an independent specialist brand and <b>an AliTechGrid Canada initiative</b>. Shared business communication channels are used for client service and operations.</div></div><div><b>Explore</b><a href="advisor.html">AI Solution Engine</a><a href="solutions.html">Business Solutions</a><a href="training.html">Training</a><a href="services.html">Services & Pricing</a></div><div><b>Company</b><a href="industries.html">Industries</a><a href="about.html">About</a><a href="contact.html">Contact</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></div><div><b>Start here</b><p>Describe the work once. Get a reasoned AI solution, learning path, implementation roadmap, budget and measures of success.</p><a class="text-link" href="advisor.html">Build my plan →</a></div></div><div class="container footer-bottom"><span>© 2026 Enterprise AI Skills</span><span>Plan → Learn → Apply → Measure → Improve</span></div></footer>
+<footer class="site-footer"><div class="container footer-grid"><div><a class="footer-brand-link" href="index.html" aria-label="Enterprise AI Skills home"><img class="footer-brand-logo" src="assets/logo.svg" alt="EnterpriseAISkills — AI Business Value, Workforce, Solutions"></a><p>Practical AI advisory, workforce capability, training and implementation planning for modern organizations and professionals.</p><div class="footer-contact"><a href="tel:+17783584040">+1 778 358 4040</a><a href="https://wa.me/16726719982">WhatsApp +1 672 671 9982</a><a href="mailto:contact@alitechgrid.com">contact@alitechgrid.com</a></div><div class="brand-endorsement">Enterprise AI Skills is an <b>AliTechGrid Canada initiative</b>.</div></div><div><b>Explore</b><a href="advisor.html">AI Solution Engine</a><a href="solutions.html">Business Solutions</a><a href="training.html">Training</a><a href="services.html">Services & Pricing</a></div><div><b>Company</b><a href="industries.html">Industries</a><a href="about.html">About</a><a href="contact.html">Contact</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></div><div><b>Start here</b><p>Describe the work once. Get a reasoned AI solution, learning path, implementation roadmap, budget and measures of success.</p><a class="text-link" href="advisor.html">Build my plan →</a></div></div><div class="container footer-bottom"><span>© 2026 Enterprise AI Skills. All rights reserved.</span><span>Plan → Learn → Apply → Measure → Improve</span></div></footer>
 <script>
 
 (()=>{const toggle=document.querySelector('.nav-toggle');const nav=document.querySelector('.main-nav');if(toggle&&nav){toggle.addEventListener('click',()=>{const open=nav.classList.toggle('open');toggle.setAttribute('aria-expanded',String(open));toggle.textContent=open?'×':'☰'});}document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{const id=a.getAttribute('href');if(id.length>1){const el=document.querySelector(id);if(el){e.preventDefault();el.scrollIntoView({behavior:'smooth'});}}}));})();
@@ -372,181 +348,64 @@
 </script>
 
 <button class="eais-chat-launcher" id="eaisChatLauncher" aria-haspopup="dialog" aria-controls="eaisChatPanel" aria-expanded="false">
-  <span class="eais-chat-dot" aria-hidden="true"></span>
-  <span>AI Business Advisor</span>
+<span class="eais-chat-dot" aria-hidden="true"></span><span>AI Business Advisor</span>
 </button>
 <section class="eais-chat-panel" id="eaisChatPanel" role="dialog" aria-modal="false" aria-label="Enterprise AI Skills AI Business Advisor">
-  <div class="eais-chat-head">
-    <div class="eais-chat-title">
-      <span class="eais-chat-dot" aria-hidden="true"></span>
-      <div><b>AI Business Advisor</b><small>Training • Solutions • Budget • Next steps</small></div>
-    </div>
-    <button class="eais-chat-close" id="eaisChatClose" aria-label="Close chat">×</button>
-  </div>
-  <div class="eais-chat-body" id="eaisChatBody"></div>
-  <div class="eais-chat-input-wrap">
-    <div class="eais-chat-input-row">
-      <input class="eais-chat-input" id="eaisChatInput" type="text" maxlength="500" placeholder="Describe your work or problem..." aria-label="Message the AI Business Advisor">
-      <button class="eais-chat-send" id="eaisChatSend">Send</button>
-    </div>
-    <div class="eais-chat-note">Do not enter confidential, personal, regulated, proprietary or security-sensitive information.</div>
-  </div>
+<div class="eais-chat-head">
+  <div class="eais-chat-title"><span class="eais-chat-dot" aria-hidden="true"></span><div><b>AI Business Advisor</b><small>Training • Solutions • Budget • Next steps</small></div></div>
+  <button class="eais-chat-close" id="eaisChatClose" aria-label="Close chat">×</button>
+</div>
+<div class="eais-chat-body" id="eaisChatBody"></div>
+<div class="eais-chat-input-wrap">
+  <div class="eais-chat-input-row"><input class="eais-chat-input" id="eaisChatInput" type="text" maxlength="500" placeholder="Describe your work or problem..." aria-label="Message the AI Business Advisor"><button class="eais-chat-send" id="eaisChatSend">Send</button></div>
+  <div class="eais-chat-note">Do not enter confidential, personal, regulated, proprietary or security-sensitive information.</div>
+</div>
 </section>
 
 <script>
 
 (function(){
-  const $ = s => document.querySelector(s);
-  const launcher = $('#eaisChatLauncher');
-  const panel = $('#eaisChatPanel');
-  const closeBtn = $('#eaisChatClose');
-  const body = $('#eaisChatBody');
-  const input = $('#eaisChatInput');
-  const send = $('#eaisChatSend');
-  if(!launcher || !panel || !body) return;
-
-  const state = {started:false,lastTopic:''};
-
-  function esc(s){return String(s||'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));}
-  function scrollBottom(){body.scrollTop=body.scrollHeight;}
-  function bot(text, html=false){
-    const row=document.createElement('div'); row.className='eais-msg bot';
-    const b=document.createElement('div'); b.className='eais-bubble';
-    if(html) b.innerHTML=text; else b.textContent=text;
-    row.appendChild(b); body.appendChild(row); scrollBottom();
-  }
-  function user(text){
-    const row=document.createElement('div'); row.className='eais-msg user';
-    const b=document.createElement('div'); b.className='eais-bubble'; b.textContent=text;
-    row.appendChild(b); body.appendChild(row); scrollBottom();
-  }
-  function chips(items){
-    const wrap=document.createElement('div'); wrap.className='eais-quick';
-    items.forEach(([label,value])=>{
-      const btn=document.createElement('button'); btn.className='eais-chip'; btn.textContent=label;
-      btn.addEventListener('click',()=>handle(value||label,label));
-      wrap.appendChild(btn);
-    });
-    body.appendChild(wrap); scrollBottom();
-  }
-  function card(title,desc,href,label){
-    bot(`<div class="eais-chat-card"><b>${esc(title)}</b><small>${esc(desc)}</small><a href="${href}">${esc(label||'Open →')}</a></div>`,true);
-  }
-  function welcome(){
-    if(state.started) return;
-    state.started=true;
-    bot("Welcome. You do not need to know AI terminology. Tell me what you want to improve, and I’ll guide you to the fastest useful next step.");
-    chips([
-      ["Improve customers","customers"],
-      ["Improve a process","process"],
-      ["Train myself","individual training"],
-      ["Train my team","team training"],
-      ["Get budget & schedule","estimate"],
-      ["Solve a business problem","solution"]
-    ]);
-  }
-  function classify(t){
-    t=t.toLowerCase();
-    if(/price|pricing|cost|budget|estimate|quote|quotation|how much/.test(t)) return 'estimate';
-    if(/team|staff|employee|workforce|department|group|supervisor/.test(t) && /train|learn|skill|course/.test(t)) return 'teamtraining';
-    if(/myself|individual|career|job|personal/.test(t) || (/train|learn|course/.test(t) && !/team|staff|employee|workforce|department|group/.test(t))) return 'individual';
-    if(/customer|client|service|sales|response|experience/.test(t)) return 'customers';
-    if(/product|service offering|innovation|new service|new product/.test(t)) return 'products';
-    if(/process|workflow|manual|repetitive|automation|delay|slow|approval/.test(t)) return 'process';
-    if(/decision|analysis|report|insight|forecast|planning/.test(t)) return 'decisions';
-    if(/people|manager|boss|colleague|team member|direct report|communication|meeting|hr/.test(t)) return 'people';
-    if(/performance|productivity|quality|cost|revenue|growth|kpi/.test(t)) return 'performance';
-    if(/problem|solution|implement|implementation|strategy|advis/.test(t)) return 'solution';
-    if(/contact|phone|whatsapp|email|talk|speak/.test(t)) return 'contact';
-    return 'general';
-  }
-  function handle(value,shown){
-    const text=(value||'').trim(); if(!text) return;
-    user(shown||text); input.value='';
-    const intent=classify(text);
-    state.lastTopic=intent;
-
-    if(intent==='estimate'){
-      bot("For a useful estimate, the site should first understand your role, organization size, priority, urgency and whether you need training only or implementation support. The Solution Engine then gives a planning range, budget structure and schedule.");
-      card("Generate an Estimate Plan","Receive a recommended option, estimated investment range, midpoint planning figure, schedule and assumptions.","advisor.html","Generate estimate →");
-      chips([["Fixed course prices","fixed courses"],["Private team training","team training"],["Speak to us","contact"]]);
-      return;
-    }
-    if(intent==='teamtraining'){
-      bot("For teams, the right program depends on role, business function, current AI capability and the work you want to improve. You can choose a fixed private-team course or generate a customized team plan.");
-      card("Private Team Training","Role-based practical AI training with published standard fees for many team programs.","training.html#fixed-courses","View team options →");
-      card("Custom Team AI Plan","Best when you need department-specific workflows, governance, implementation, KPIs or change support.","advisor.html","Build team plan →");
-      return;
-    }
-    if(intent==='individual'){
-      bot("For an individual, I recommend starting from your actual job rather than learning random AI tools. The site can map AI skills to the work you do now and the capability you want to build.");
-      card("AI Career & Professional Productivity","A fixed practical program for individual professionals.","training.html#fixed-courses","View course →");
-      card("Personal AI Work Plan","Generate a more tailored learning and workplace application path.","advisor.html","Build my plan →");
-      return;
-    }
-    if(intent==='customers'){
-      bot("Good priority. AI can support customer communication, service quality, response time, personalization, knowledge access, sales support and customer insight. The best choice depends on your current bottleneck and how customer data is handled.");
-      chips([["Faster customer response","process"],["Better customer insights","decisions"],["Train customer-facing staff","team training"],["Build full solution plan","solution"]]);
-      return;
-    }
-    if(intent==='products'){
-      bot("For products and services, useful AI opportunities include research, customer insight, service design, content, quality, personalization, knowledge support and faster iteration. The engine should compare quick wins with higher-value transformation options.");
-      card("Build Product/Service AI Plan","Map opportunities, skills, implementation, budget, schedule and measures of value.","advisor.html","Start plan →");
-      return;
-    }
-    if(intent==='process'){
-      bot("Process improvement is one of the strongest AI value areas. Start with work that is repetitive, slow, manual, error-prone or dependent on too much searching, copying, reporting or follow-up.");
-      bot("A strong plan normally compares: 1) AI-assisted work, 2) workflow automation, and 3) deeper process redesign—then recommends the least complex option that delivers the required value.");
-      card("Analyze My Process","Generate alternative solutions, recommended skills, implementation steps, estimate and KPIs.","advisor.html","Analyze process →");
-      return;
-    }
-    if(intent==='decisions'){
-      bot("AI can improve decisions by helping people summarize evidence, compare options, identify patterns, prepare reports and surface risks. Human accountability remains essential—especially for material, regulated or people-related decisions.");
-      card("Build Decision-Support Plan","Map the decision, information sources, skills, controls, implementation and measures.","advisor.html","Build plan →");
-      return;
-    }
-    if(intent==='people'){
-      bot("For people and collaboration, focus on work between managers, direct reports, colleagues, customers, suppliers and stakeholders: meetings, communication, coaching, knowledge sharing, documentation and coordination.");
-      card("AI for Managers / Supervisors / Teams","Choose a fixed role-based training path.","training.html#fixed-courses","View training →");
-      return;
-    }
-    if(intent==='performance'){
-      bot("Performance should be measured in business terms—not AI usage. Useful measures include time saved, turnaround time, quality, error rate, customer response, revenue support, cost, employee capability and decision speed.");
-      card("Build a Measurable AI Plan","The Solution Engine links recommendations to KPIs and implementation milestones.","advisor.html","Build measurable plan →");
-      return;
-    }
-    if(intent==='solution'){
-      bot("The fastest route is to describe the work once. The AI Solution Engine will map the problem to business value, compare multiple approaches, recommend the best-fit option, and produce learning, implementation, estimated budget, schedule and KPIs.");
-      card("AI Business Value & Workforce Solution Engine","For customers, products/services, processes, decisions, people and performance.","advisor.html","Build my solution plan →");
-      return;
-    }
-    if(intent==='contact'){
-      bot("You can use the shared business communication channels below. Enterprise AI Skills remains the specialist client-facing brand.");
-      bot(`<div class="eais-chat-card"><b>Contact Enterprise AI Skills</b><small>Business: +1 778 358 4040<br>WhatsApp: +1 672 671 9982<br>Email: contact@alitechgrid.com</small><a href="contact.html">Open contact page →</a></div>`,true);
-      return;
-    }
-    if(/fixed course/.test(text.toLowerCase())){
-      card("Standard AI Courses","Published programs for executives, managers, supervisors, employees, technical teams and individuals.","training.html#fixed-courses","View courses →");
-      return;
-    }
-
-    bot("I can help with that. To avoid wasting your time, choose the closest business objective below—or describe the specific work that is causing the problem.");
-    chips([
-      ["Customers","customers"],["Products & Services","products"],["Processes","process"],
-      ["Decisions","decisions"],["People","people"],["Performance","performance"],
-      ["Budget & schedule","estimate"],["Training","team training"]
-    ]);
-  }
-
-  launcher.addEventListener('click',()=>{
-    const open=panel.classList.toggle('open');
-    launcher.setAttribute('aria-expanded',open?'true':'false');
-    if(open){welcome();setTimeout(()=>input.focus(),50);}
-  });
-  closeBtn.addEventListener('click',()=>{panel.classList.remove('open');launcher.setAttribute('aria-expanded','false');launcher.focus();});
-  send.addEventListener('click',()=>handle(input.value));
-  input.addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();handle(input.value);}});
-  document.addEventListener('keydown',e=>{if(e.key==='Escape'&&panel.classList.contains('open'))closeBtn.click();});
+const $=s=>document.querySelector(s),launcher=$('#eaisChatLauncher'),panel=$('#eaisChatPanel'),closeBtn=$('#eaisChatClose'),body=$('#eaisChatBody'),input=$('#eaisChatInput'),send=$('#eaisChatSend');
+if(!launcher||!panel||!body)return;
+let started=false;
+const esc=s=>String(s||'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+function scrollBottom(){body.scrollTop=body.scrollHeight}
+function bot(text,html=false){const r=document.createElement('div');r.className='eais-msg bot';const b=document.createElement('div');b.className='eais-bubble';html?b.innerHTML=text:b.textContent=text;r.appendChild(b);body.appendChild(r);scrollBottom()}
+function user(text){const r=document.createElement('div');r.className='eais-msg user';const b=document.createElement('div');b.className='eais-bubble';b.textContent=text;r.appendChild(b);body.appendChild(r);scrollBottom()}
+function card(title,desc,href,label){bot(`<div class="eais-chat-card"><b>${esc(title)}</b><small>${esc(desc)}</small><a href="${href}">${esc(label||'Open →')}</a></div>`,true)}
+function chips(items){const w=document.createElement('div');w.className='eais-quick';items.forEach(([label,value])=>{const b=document.createElement('button');b.className='eais-chip';b.textContent=label;b.addEventListener('click',()=>handle(value||label,label));w.appendChild(b)});body.appendChild(w);scrollBottom()}
+function classify(t){t=t.toLowerCase();
+ if(/price|pricing|cost|budget|estimate|quote|quotation|how much/.test(t))return'estimate';
+ if(/team|staff|employee|workforce|department|group|supervisor/.test(t)&&/train|learn|skill|program/.test(t))return'teamtraining';
+ if(/myself|individual|career|job|personal/.test(t)||(/train|learn|program/.test(t)&&!/team|staff|employee|workforce|department|group/.test(t)))return'individual';
+ if(/customer|client|service|sales|response|experience/.test(t))return'customers';
+ if(/product|service offering|innovation|new service|new product/.test(t))return'products';
+ if(/process|workflow|manual|repetitive|automation|delay|slow|approval/.test(t))return'process';
+ if(/decision|analysis|report|insight|forecast|planning/.test(t))return'decisions';
+ if(/people|manager|boss|colleague|team member|direct report|communication|meeting|hr/.test(t))return'people';
+ if(/performance|productivity|quality|cost|revenue|growth|kpi/.test(t))return'performance';
+ if(/problem|solution|implement|implementation|strategy|advis/.test(t))return'solution';
+ if(/contact|phone|whatsapp|email|talk|speak/.test(t))return'contact';
+ return'general'}
+function welcome(){if(started)return;started=true;bot("Welcome. You do not need to know AI terminology. Tell me what you want to improve, and I’ll guide you to the fastest useful next step.");chips([["Improve customers","customers"],["Improve a process","process"],["Train myself","individual training"],["Train my team","team training"],["Get budget & schedule","estimate"],["Solve a business problem","solution"]])}
+function handle(value,shown){const text=(value||'').trim();if(!text)return;user(shown||text);input.value='';const intent=classify(text);
+ if(intent==='estimate'){bot("For a useful estimate, the site should first understand your role, organization size, priority, urgency and whether you need training only or implementation support.");card("Generate an Estimate Plan","Receive a recommended option, estimated investment range, schedule and assumptions.","advisor.html","Generate estimate →");return}
+ if(intent==='teamtraining'){bot("For teams, choose standard role-based training when the need is clear, or generate a customized team plan when workflows, governance or implementation matter.");card("Private Team Training","Practical role-based AI training with standard fees.","training.html#fixed-courses","View team training →");card("Custom Team AI Plan","Best for department-specific workflows, governance, implementation or KPIs.","advisor.html","Build team plan →");return}
+ if(intent==='individual'){bot("Start from your actual job rather than random AI tools.");card("AI Career & Professional Productivity","A practical training program for individual professionals.","training.html#fixed-courses","View training →");card("Personal AI Work Plan","Generate a tailored learning and workplace application path.","advisor.html","Build my plan →");return}
+ if(intent==='customers'){bot("AI can support customer communication, service quality, response time, knowledge access, sales support and customer insight.");chips([["Faster customer response","process"],["Better customer insights","decisions"],["Train customer-facing staff","team training"],["Build full solution plan","solution"]]);return}
+ if(intent==='products'){bot("For products and services, useful AI opportunities include research, customer insight, service design, quality, personalization and faster iteration.");card("Build Product/Service AI Plan","Map opportunities, skills, implementation, budget, schedule and measures of value.","advisor.html","Start plan →");return}
+ if(intent==='process'){bot("Process improvement is strongest where work is repetitive, slow, manual, error-prone or dependent on too much searching, copying, reporting or follow-up.");card("Analyze My Process","Generate alternative solutions, recommended skills, implementation steps, estimate and KPIs.","advisor.html","Analyze process →");return}
+ if(intent==='decisions'){bot("AI can improve decisions by summarizing evidence, comparing options, identifying patterns and surfacing risks. Human accountability remains essential.");card("Build Decision-Support Plan","Map the decision, information sources, skills, controls and measures.","advisor.html","Build plan →");return}
+ if(intent==='people'){bot("For people and collaboration, focus on managers, direct reports, colleagues, customers, suppliers and stakeholders: meetings, communication, coaching, knowledge sharing and coordination.");card("AI Training for Managers, Supervisors & Teams","Choose a role-based training pathway.","training.html#fixed-courses","View training →");return}
+ if(intent==='performance'){bot("Measure performance in business terms: time saved, turnaround, quality, error rate, customer response, revenue support, cost, employee capability and decision speed.");card("Build a Measurable AI Plan","Link recommendations to KPIs and implementation milestones.","advisor.html","Build measurable plan →");return}
+ if(intent==='solution'){bot("Describe the work once. The AI Solution Engine maps the problem to business value, compares approaches, recommends the best fit, and produces training, implementation, estimated budget, schedule and KPIs.");card("AI Business Value & Workforce Solution Engine","For customers, products/services, processes, decisions, people and performance.","advisor.html","Build my solution plan →");return}
+ if(intent==='contact'){bot(`<div class="eais-chat-card"><b>Contact Enterprise AI Skills</b><small>Business: +1 778 358 4040<br>WhatsApp: +1 672 671 9982<br>Email: contact@alitechgrid.com</small><a href="contact.html">Open contact page →</a></div>`,true);return}
+ bot("Choose the closest business objective below—or describe the specific work causing the problem.");chips([["Customers","customers"],["Products & Services","products"],["Processes","process"],["Decisions","decisions"],["People","people"],["Performance","performance"],["Budget & schedule","estimate"],["Training","team training"]])
+}
+launcher.addEventListener('click',()=>{const open=panel.classList.toggle('open');launcher.setAttribute('aria-expanded',open?'true':'false');if(open){welcome();setTimeout(()=>input.focus(),50)}});
+closeBtn.addEventListener('click',()=>{panel.classList.remove('open');launcher.setAttribute('aria-expanded','false');launcher.focus()});
+send.addEventListener('click',()=>handle(input.value));input.addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();handle(input.value)}});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&panel.classList.contains('open'))closeBtn.click()});
 })();
 
 </script>

@@ -1,54 +1,25 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 96" role="img" aria-labelledby="title desc">
-  <title id="title">Enterprise AI Skills</title>
-  <desc id="desc">Enterprise AI Skills corporate AI, cloud and data training logo</desc>
-
-  <defs>
-    <linearGradient id="brandGradient" x1="8" y1="8" x2="88" y2="88" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#38D3FF"/>
-      <stop offset="1" stop-color="#7C5CFF"/>
-    </linearGradient>
-  </defs>
-
-  <!-- Mark -->
-  <g transform="translate(4 4)">
-    <path
-      d="M44 1 82 23v42L44 87 6 65V23z"
-      fill="#0E1830"
-      stroke="url(#brandGradient)"
-      stroke-width="4"
-      stroke-linejoin="round"
-    />
-
-    <!-- Geometric E -->
-    <path
-      d="M23 24h43v10H35v10h24v10H35v10h31v10H23z"
-      fill="url(#brandGradient)"
-    />
-
-    <!-- Data / AI node -->
-    <circle cx="69" cy="69" r="6.5" fill="#39D0FF"/>
-    <circle cx="69" cy="69" r="9" fill="none" stroke="#39D0FF" stroke-opacity=".18" stroke-width="2"/>
-  </g>
-
-  <!-- Wordmark -->
-  <text
-    x="108"
-    y="42"
-    fill="#F8FAFF"
-    font-family="Inter, Segoe UI, Arial, sans-serif"
-    font-size="30"
-    font-weight="800"
-    letter-spacing="-0.7"
-  >Enterprise AI Skills</text>
-
-  <!-- Descriptor -->
-  <text
-    x="110"
-    y="69"
-    fill="#A8B6CF"
-    font-family="Inter, Segoe UI, Arial, sans-serif"
-    font-size="15.5"
-    font-weight="650"
-    letter-spacing=".75"
-  >CORPORATE AI • CLOUD • DATA TRAINING</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 96" role="img" aria-labelledby="title desc">
+<title id="title">EnterpriseAISkills</title>
+<desc id="desc">EnterpriseAISkills — AI Business Value, Workforce and Solutions</desc>
+<defs>
+  <linearGradient id="brandGradient" x1="8" y1="8" x2="88" y2="88" gradientUnits="userSpaceOnUse">
+    <stop offset="0" stop-color="#38D3FF"/>
+    <stop offset="1" stop-color="#7C5CFF"/>
+  </linearGradient>
+</defs>
+<g transform="translate(4 4)">
+  <path d="M44 1 82 23v42L44 87 6 65V23z" fill="#0E1830"
+        stroke="url(#brandGradient)" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M23 24h43v10H35v10h24v10H35v10h31v10H23z" fill="url(#brandGradient)"/>
+  <circle cx="69" cy="69" r="6.5" fill="#39D0FF"/>
+  <circle cx="69" cy="69" r="9" fill="none" stroke="#39D0FF" stroke-opacity=".18" stroke-width="2"/>
+</g>
+<text x="108" y="43" font-family="Inter, Segoe UI, Arial, sans-serif"
+      font-size="30" font-weight="850" letter-spacing="-0.9">
+  <tspan fill="#F8FAFF">Enterprise</tspan><tspan fill="#67D5E4">AI</tspan><tspan fill="#F8FAFF">Skills</tspan>
+</text>
+<text x="110" y="69" fill="#A8B6CF" font-family="Inter, Segoe UI, Arial, sans-serif"
+      font-size="13.6" font-weight="700" letter-spacing=".85">
+  AI BUSINESS VALUE • WORKFORCE • SOLUTIONS
+</text>
 </svg>

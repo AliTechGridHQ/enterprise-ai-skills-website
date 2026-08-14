@@ -1,0 +1,27 @@
+{
+  "version": "V4.7 REPAIRED",
+  "html_pages": 11,
+  "broken_links": {},
+  "invalid_anchor_refs": {},
+  "chatbot_counts": {
+    "404.html": 0,
+    "about.html": 1,
+    "advisor.html": 1,
+    "contact.html": 1,
+    "index.html": 1,
+    "industries.html": 1,
+    "privacy.html": 1,
+    "services.html": 1,
+    "solutions.html": 1,
+    "terms.html": 1,
+    "training.html": 1
+  },
+  "visible_js_leaks": {},
+  "visible_course_words": {},
+  "js_syntax_errors": {},
+  "copyright_missing": [],
+  "advisor_engine_identifiers_ok": true,
+  "advisor_body_close_count": 2,
+  "advisor_html_close_count": 2,
+  "final_pass": true
+}

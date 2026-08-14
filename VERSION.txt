@@ -1,36 +1,22 @@
-EnterpriseAISkills.com
-Final Production Candidate V4
-Date: 2026-08-13
+EnterpriseAISkills.com — Production V4.7 REPAIRED
+Date: 2026-08-14
 
-Positioning:
-AI Business Value & Workforce Solution Engine
+This build was reconstructed from the last clean Advisor engine version.
 
-Core value model:
-Customers
-Products & Services
-Processes
-Decisions
-People
-Performance
+Included:
+- Original hexagonal E identity
+- Color wordmark: Enterprise + cyan AI + Skills
+- Descriptor: AI BUSINESS VALUE • WORKFORCE • SOLUTIONS
+- Enterprise training terminology in customer-facing copy
+- AI Business Advisor chatbot
+- AI Business Value & Workforce Solution Engine
+- Standard training programs and private team training
+- Estimate, budget, schedule, implementation and KPI planning
+- Credibility block: 1,000+ learners, 100+ professionals, 7+ institutions, 3+ academies
+- Copyright: © 2026 Enterprise AI Skills. All rights reserved.
+- Single low-emphasis AliTechGrid Canada endorsement
 
-Commercial paths:
-1. Standard fixed role-based AI courses
-2. Custom AI Business Value & Learning Plan
-3. Private team training
-4. Advisory / implementation planning
-
-Brand architecture:
-Enterprise AI Skills = primary client-facing specialist brand
-AliTechGrid Canada = limited shared operational and communication support
-
-Important:
-The current public Solution Engine is a deterministic client-side planning engine.
-A secure server-side AI layer is required for live open-ended reasoning, current
-tool/vendor research, CRM integration, payment, formal quotation, and sensitive-data workflows.
-
-V4.1 Update:
-- Added AI Business Advisor chatbot to all main customer pages.
-- Chatbot is a privacy-conscious client-side advisor (no external AI/API key).
-- Routes users to training, solution engine, estimates, scheduling and contact paths.
-- Updated homepage wording to: "Need AI training—or a complete business solution?"
-Cloudflare deployment refresh: 2026-08-14
+Critical repair:
+- Removed chatbot injection from the Advisor downloadable-plan template.
+- Restored valid internal JavaScript identifiers (e.g., fixedCourseCatalog/fixedCourses).
+- Preserved internal anchor id #fixed-courses while customer-facing wording says Training.
