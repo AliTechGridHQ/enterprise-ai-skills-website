@@ -20,3 +20,11 @@ Critical repair:
 - Removed chatbot injection from the Advisor downloadable-plan template.
 - Restored valid internal JavaScript identifiers (e.g., fixedCourseCatalog/fixedCourses).
 - Preserved internal anchor id #fixed-courses while customer-facing wording says Training.
+
+V4.8 Google Analytics 4
+- GA4 Measurement ID: G-HL64FS24QB
+- Google tag added to all website pages.
+- Added business-value event tracking for Solution Engine, plans, chatbot, training,
+  estimates, WhatsApp, phone and email.
+- Custom event tracking does not send Advisor/chatbot text.
+- Added Google Analytics disclosure to Privacy page.

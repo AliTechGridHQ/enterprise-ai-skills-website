@@ -1,6 +1,15 @@
 <!doctype html>
 <html lang="en">
 <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HL64FS24QB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HL64FS24QB');
+</script>
+
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Contact | Enterprise AI Skills</title>
@@ -255,4 +264,130 @@ document.addEventListener('keydown',e=>{if(e.key==='Escape'&&panel.classList.con
 })();
 
 </script>
+
+<script>
+/* Enterprise AI Skills GA4 business-event tracking.
+   Tracks actions only; it does NOT send Advisor/chatbot text or form content. */
+(function(){
+  if (typeof window.gtag !== 'function') return;
+
+  function track(name, params){
+    var base = {
+      page_path: window.location.pathname,
+      page_title: document.title
+    };
+    window.gtag('event', name, Object.assign(base, params || {}));
+  }
+  window.eaisTrack = track;
+
+  function cleanLabel(el){
+    return ((el && el.textContent) || '').replace(/\s+/g,' ').trim().slice(0,80);
+  }
+
+  document.addEventListener('click', function(e){
+    var el = e.target.closest('a,button');
+    if (!el) return;
+
+    var href = el.getAttribute('href') || '';
+    var label = cleanLabel(el);
+
+    if (href.indexOf('https://wa.me/') === 0) {
+      track('whatsapp_clicked', {cta_label: label || 'WhatsApp'});
+      track('contact_intent', {channel:'whatsapp'});
+    }
+    if (href.indexOf('tel:') === 0) {
+      track('phone_clicked', {cta_label: label || 'Phone'});
+      track('contact_intent', {channel:'phone'});
+    }
+    if (href.indexOf('mailto:') === 0) {
+      track('email_clicked', {cta_label: label || 'Email'});
+      track('contact_intent', {channel:'email'});
+    }
+
+    if (href.indexOf('advisor.html') !== -1 && /build|plan|solution|estimate/i.test(label)) {
+      track('build_plan_clicked', {cta_label: label});
+    }
+    if (href.indexOf('training.html') !== -1) {
+      track('training_clicked', {cta_label: label});
+    }
+    if (href.indexOf('contact.html') !== -1) {
+      track('contact_page_clicked', {cta_label: label});
+    }
+    if (/estimate/i.test(label)) {
+      track('estimate_requested', {cta_label: label});
+    }
+
+    if (el.matches('[data-plan-download]')) {
+      track('plan_downloaded', {format:'html'});
+    }
+    if (el.matches('[data-plan-print]')) {
+      track('plan_print_or_pdf', {format:'print_pdf'});
+    }
+    if (el.matches('[data-plan-copy]')) {
+      track('plan_summary_copied');
+    }
+
+    if (el.id === 'eaisChatLauncher') {
+      setTimeout(function(){
+        if (el.getAttribute('aria-expanded') === 'true') {
+          track('advisor_chat_opened');
+        }
+      }, 0);
+    }
+
+    if (el.matches('[data-next]') && /advisor\.html$/.test(window.location.pathname)) {
+      try {
+        if (!sessionStorage.getItem('eais_plan_started')) {
+          sessionStorage.setItem('eais_plan_started','1');
+          track('plan_started');
+        }
+      } catch(x) {
+        track('plan_started');
+      }
+    }
+  });
+
+  function pageEvent(){
+    var path = window.location.pathname;
+    if (/training\.html$/.test(path)) track('training_viewed');
+    if (/services\.html$/.test(path)) track('services_pricing_viewed');
+    if (/contact\.html$/.test(path)) track('contact_page_viewed');
+    if (/advisor\.html$/.test(path)) track('solution_engine_viewed');
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', pageEvent);
+  } else {
+    pageEvent();
+  }
+
+  /* Record a completed plan only when the generated-plan section actually becomes visible. */
+  if (/advisor\.html$/.test(window.location.pathname)) {
+    function watchPlan(){
+      var section = document.querySelector('[data-plan-section]');
+      if (!section) return;
+
+      var sent = false;
+      function check(){
+        if (!section.hidden && !sent) {
+          sent = true;
+          track('plan_completed');
+        }
+      }
+      check();
+      new MutationObserver(check).observe(section, {
+        attributes:true,
+        attributeFilter:['hidden']
+      });
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', watchPlan);
+    } else {
+      watchPlan();
+    }
+  }
+})();
+</script>
+
 </body></html>

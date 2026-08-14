@@ -1,0 +1,42 @@
+{
+  "version": "V4.8 GA4 ANALYTICS",
+  "measurement_id": "G-HL64FS24QB",
+  "html_pages": 11,
+  "ga_tag_pages": [
+    "404.html",
+    "about.html",
+    "advisor.html",
+    "contact.html",
+    "index.html",
+    "industries.html",
+    "privacy.html",
+    "services.html",
+    "solutions.html",
+    "terms.html",
+    "training.html"
+  ],
+  "business_tracking_pages": [
+    "404.html",
+    "about.html",
+    "advisor.html",
+    "contact.html",
+    "index.html",
+    "industries.html",
+    "privacy.html",
+    "services.html",
+    "solutions.html",
+    "terms.html",
+    "training.html"
+  ],
+  "ga_tag_missing": [],
+  "event_script_missing": [],
+  "visible_js_leaks": {},
+  "js_syntax_errors": {},
+  "broken_internal_links": {},
+  "invalid_anchor_refs": {},
+  "privacy_disclosure": true,
+  "advisor_measurement_id_count": 2,
+  "advisor_body_close_count": 2,
+  "advisor_html_close_count": 2,
+  "final_pass": true
+}
